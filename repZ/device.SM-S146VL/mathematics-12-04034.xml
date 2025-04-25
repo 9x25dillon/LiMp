@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.3 20210610//EN" "JATS-journalpublishing1-3.dtd">
+<article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.3" xml:lang="en">
+  <front>
+    <journal-meta>
+      <journal-id journal-id-type="publisher-id">mathematics</journal-id>
+      <journal-title-group>
+        <journal-title>Mathematics</journal-title>
+        <abbrev-journal-title abbrev-type="publisher">Mathematics</abbrev-journal-title>
+        <abbrev-journal-title abbrev-type="pubmed">Mathematics</abbrev-journal-title>
+      </journal-title-group>
+      <issn pub-type="epub">2227-7390</issn>
+      <publisher>
+        <publisher-name>MDPI</publisher-name>
+      </publisher>
+    </journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.3390/math12244034</article-id>
+      <article-id pub-id-type="publisher-id">mathematics-12-04034</article-id>
+      <article-categories>
+        <subj-group>
+          <subject>Article</subject>
+        </subj-group>
+      </article-categories>
+      <title-group>
+        <article-title>Crude Oil Futures Price Forecasting Based on Variational and Empirical Mode Decompositions and Transformer Model</article-title>
+      </title-group>
+      <contrib-group>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Huang</surname>
+            <given-names>Linya</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Conceptualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/conceptualization/">Conceptualization</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Validation" vocab-term-identifier="https://credit.niso.org/contributor-roles/validation/">Validation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Resources" vocab-term-identifier="https://credit.niso.org/contributor-roles/resources/">Resources</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Data curation" vocab-term-identifier="https://credit.niso.org/contributor-roles/data-curation/">Data curation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+          <xref rid="af1-mathematics-12-04034" ref-type="aff">1</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Yang</surname>
+            <given-names>Xite</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; original draft" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-original-draft/">Writing &#x2013; original draft</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+          <xref rid="af2-mathematics-12-04034" ref-type="aff">2</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <contrib-id contrib-id-type="orcid" authenticated="true">https://orcid.org/0000-0002-1039-7019</contrib-id>
+          <name>
+            <surname>Lai</surname>
+            <given-names>Yongzeng</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Methodology" vocab-term-identifier="https://credit.niso.org/contributor-roles/methodology/">Methodology</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Formal analysis" vocab-term-identifier="https://credit.niso.org/contributor-roles/formal-analysis/">Formal analysis</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Writing &#x2013; review &amp; editing" vocab-term-identifier="https://credit.niso.org/contributor-roles/writing-review-editing/">Writing &#x2013; review &amp; editing</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Supervision" vocab-term-identifier="https://credit.niso.org/contributor-roles/supervision/">Supervision</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role>
+          <xref rid="af3-mathematics-12-04034" ref-type="aff">3</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zou</surname>
+            <given-names>Ankang</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Software" vocab-term-identifier="https://credit.niso.org/contributor-roles/software/">Software</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Validation" vocab-term-identifier="https://credit.niso.org/contributor-roles/validation/">Validation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Data curation" vocab-term-identifier="https://credit.niso.org/contributor-roles/data-curation/">Data curation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Visualization" vocab-term-identifier="https://credit.niso.org/contributor-roles/visualization/">Visualization</role>
+          <xref rid="af4-mathematics-12-04034" ref-type="aff">4</xref>
+        </contrib>
+        <contrib contrib-type="author">
+          <name>
+            <surname>Zhang</surname>
+            <given-names>Jilin</given-names>
+          </name>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Investigation" vocab-term-identifier="https://credit.niso.org/contributor-roles/investigation/">Investigation</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Resources" vocab-term-identifier="https://credit.niso.org/contributor-roles/resources/">Resources</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Project administration" vocab-term-identifier="https://credit.niso.org/contributor-roles/project-administration/">Project administration</role>
+          <role vocab="credit" vocab-identifier="https://credit.niso.org/" vocab-term="Funding acquisition" vocab-term-identifier="https://credit.niso.org/contributor-roles/funding-acquisition/">Funding acquisition</role>
+          <xref rid="af5-mathematics-12-04034" ref-type="aff">5</xref>
+          <xref rid="c1-mathematics-12-04034" ref-type="corresp">*</xref>
+        </contrib>
+      </contrib-group>
+      <contrib-group>
+        <contrib contrib-type="editor">
+          <name>
+            <surname>Kim</surname>
+            <given-names>Junseok</given-names>
+          </name>
+          <role>Academic Editor</role>
+        </contrib>
+      </contrib-group>
+      <aff id="af1-mathematics-12-04034"><label>1</label>Sichuan Provincial Health Information Center, Chengdu 610000, China; <email>liny_huang@163.com</email></aff>
+      <aff id="af2-mathematics-12-04034"><label>2</label>Business School, Sichuan University, Chengdu 610064, China; <email>yxt@stu.scu.edu.cn</email></aff>
+      <aff id="af3-mathematics-12-04034"><label>3</label>Department of Mathematics, Wilfrid Laurier University, Waterloo, ON N2L 3C5, Canada; <email>ylai@wlu.ca</email></aff>
+      <aff id="af4-mathematics-12-04034"><label>4</label>Changsha Digital Cloud Chain Technology Co., Ltd., Changsha 410000, China; <email>zakemail2021@163.com</email></aff>
+      <aff id="af5-mathematics-12-04034"><label>5</label>School of Computer Science and Mathematics, Fujian University of Technology, Fuzhou 350108, China</aff>
+      <author-notes>
+        <corresp id="c1-mathematics-12-04034"><label>*</label>Correspondence: <email>jlz@fjut.edu.cn</email></corresp>
+      </author-notes>
+      <pub-date pub-type="epub">
+        <day>23</day>
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <pub-date pub-type="collection">
+        <month>12</month>
+        <year>2024</year>
+      </pub-date>
+      <volume>12</volume>
+      <issue>24</issue>
+      <elocation-id>4034</elocation-id>
+      <history>
+        <date date-type="received">
+          <day>14</day>
+          <month>10</month>
+          <year>2024</year>
+        </date>
+        <date date-type="rev-recd">
+          <day>03</day>
+          <month>12</month>
+          <year>2024</year>
+        </date>
+        <date date-type="accepted">
+          <day>06</day>
+          <month>12</month>
+          <year>2024</year>
+        </date>
+      </history>
+      <permissions>
+        <copyright-statement>&#xA9; 2024 by the authors.</copyright-statement>
+        <copyright-year>2024</copyright-year>
+        <license license-type="open-access">
+          <license-p>Licensee MDPI, Basel, Switzerland. This article is an open access article distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license (<ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link>).</license-p>
+        </license>
+      </permissions>
+      <abstract>
+        <p>Crude oil is a raw and natural, but nonrenewable, resource. It is one of the world&#x2019;s most important commodities, and its price can have ripple effects throughout the broader economy. Accurately predicting crude oil prices is vital for investment decisions but it remains challenging. Due to the deficiencies neglecting residual factors when forecasting using conventional combination models, such as the autoregressive moving average and the long short-term memory for prediction, the variational mode decomposition (VMD)-empirical mode decomposition (EMD)-Transformer model is proposed to predict crude oil prices in this study. This model integrates a second decomposition and Transformer model-based machine learning method. More specifically, we employ the VMD technique to decompose the original sequence into variational mode filtering (VMF) and a residual sequence, followed by using EMD to decompose the residual sequence. Ultimately, we apply the Transformer model to predict the decomposed modal components and superimpose the results to produce the final forecasted prices. Further empirical test results demonstrate that the proposed quadratic decomposition composite model can comprehensively identify the characteristics of WTI and Brent crude oil futures daily price series. The test results illustrate that the proposed VMD&#x2013;EMD&#x2013;Transformer model outperforms the other three models&#x2014;long short-term memory (LSTM), Transformer, and VMD&#x2013;Transformer in forecasting crude oil prices. Details are presented in the empirical study part.</p>
+      </abstract>
+      <kwd-group>
+        <kwd>crude oil price</kwd>
+        <kwd>variational mode decomposition</kwd>
+        <kwd>empirical mode decomposition</kwd>
+        <kwd>machine learning methods</kwd>
+        <kwd>Transformer model</kwd>
+      </kwd-group>
+      <kwd-group kwd-group-type="MSC">
+        <title>MSC</title>
+        <kwd>91-02</kwd>
+      </kwd-group>
+      <funding-group>
+        <award-group>
+          <funding-source>Ministry of Education of China</funding-source>
+          <award-id>23YJAZH194</award-id>
+        </award-group>
+        <award-group>
+          <funding-source>Natural Science and Engineering Research Council (NSERC) of Canada</funding-source>
+          <award-id>RGPIN-2019-05906</award-id>
+        </award-group>
+        <funding-statement>This research was funded by the Humanities and Social Sciences Project (23YJAZH194, funded by the Ministry of Education of China) and the Natural Science and Engineering Research Council (NSERC) of Canada (RGPIN-2019-05906).</funding-statement>
+      </funding-group>
+    </article-meta>
+  </front>
+  <body>
+    <sec sec-type="intro" id="sec1-mathematics-12-04034">
+      <title>1. Introduction</title>
+      <p>Crude oil is a crucial fundamental energy source and a vital strategic resource in promoting economic prosperity and ensuring political stability for countries [<xref ref-type="bibr" rid="B1-mathematics-12-04034">1</xref>,<xref ref-type="bibr" rid="B2-mathematics-12-04034">2</xref>].</p>
+      <p>Moreover, it also holds significant value as an investment instrument in financial markets. The considerable fluctuations in crude oil prices are likely to have ramifications on the general stability of the financial system, international politics, and the military [<xref ref-type="bibr" rid="B3-mathematics-12-04034">3</xref>]. In addition, the uncertainty brought about by the volatility of crude oil prices is anticipated to escalate the operating expenditure of corporations and impact investment patterns, which may impede the steadiness of economic expansion [<xref ref-type="bibr" rid="B4-mathematics-12-04034">4</xref>,<xref ref-type="bibr" rid="B5-mathematics-12-04034">5</xref>]. Traditional econometric models, machine learning technology, and hybrid models incorporating prediction methods have been broadly utilized as approaches to forecasting futures or commodity prices. Some scholars have demonstrated the use of traditional econometric models for stock and futures price forecasting, particularly the Markov models and the ARIMA models [<xref ref-type="bibr" rid="B5-mathematics-12-04034">5</xref>,<xref ref-type="bibr" rid="B6-mathematics-12-04034">6</xref>,<xref ref-type="bibr" rid="B7-mathematics-12-04034">7</xref>,<xref ref-type="bibr" rid="B8-mathematics-12-04034">8</xref>,<xref ref-type="bibr" rid="B9-mathematics-12-04034">9</xref>]. Hossain et al. (2006) [<xref ref-type="bibr" rid="B7-mathematics-12-04034">7</xref>] found that the ARIMA model was effective in forecasting the price of mung beans. Traditional econometric models, derived from classical statistical frameworks, necessitate rigorous statistical analysis to examine their constituent parameters. Each estimated parameter in these models bears significant explanatory relevance. However, traditional econometric models require the forecast object to meet the hypothesis of data stationarity. Owing to the high-density, nonstationary, nonlinear, and complex characteristics of the futures price time series, the forecasting accuracy of traditional models is relatively limited [<xref ref-type="bibr" rid="B10-mathematics-12-04034">10</xref>]. Subsequently, further advancements in applying conventional models in forecasting research have been impeded.</p>
+      <p>However, the rapid development of artificial intelligence, especially machine learning technologies, broke this limit, which did not make strict assumptions on the function form of the model, the interaction between variables, and the statistical distribution of parameters [<xref ref-type="bibr" rid="B11-mathematics-12-04034">11</xref>]. Artificial intelligence and machine learning technologies demonstrate superior generalization and antinoise performance compared to traditional econometric models in forecasting complex financial time series data characterized by high density, nonlinearity, and nonstationarity [<xref ref-type="bibr" rid="B12-mathematics-12-04034">12</xref>]. Shin et al. (2013) and Yu et al. (2017) [<xref ref-type="bibr" rid="B13-mathematics-12-04034">13</xref>,<xref ref-type="bibr" rid="B14-mathematics-12-04034">14</xref>] adopted a neural network model and most minor square support vector to predict the price of light crude oil in West Texas, USA. Chen et al. (2016) [<xref ref-type="bibr" rid="B15-mathematics-12-04034">15</xref>] used artificial neural networks and support vector machines (SVMs) to improve the accuracy of gold futures price forecasting. Wang and Li (2018) [<xref ref-type="bibr" rid="B16-mathematics-12-04034">16</xref>] demonstrated that singular spectrum analysis (SSA) and a combined neural network model exhibit greater forecasting accuracy relative to conventional models, specifically in predicting the prices of corn, gold, and crude oil. Kohzadi et al. (1996) [<xref ref-type="bibr" rid="B17-mathematics-12-04034">17</xref>] found that incorporating nonlinearity into feedforward neural network models improved forecasting performance for agricultural product prices, surpassing traditional ARIMA models. However, the conventional feedforward neural network still has shortcomings, such as slow convergence speed, parameter adjustment complexity, poor generalization, antinoise capacity, etc. To avoid the shortcomings of traditional models, Wang et al. (2015) [<xref ref-type="bibr" rid="B18-mathematics-12-04034">18</xref>] used the backpropagation (BP) neural network models that can recognize nonlinear data for gold price forecasting, significantly improving accuracy. However, the BP neural network still has some defects in commodity price forecasting theory, such as not reflecting the time series relationship of gold price in the training process.</p>
+      <p>Despite the superior capabilities of artificial intelligence models in identifying nonlinear crude oil price sequences, the complexity of crude oil pricing is influenced by many factors and exhibits periodic and nonlinear characteristics. It is imperative to pursue further developments to enhance the predictive precision of data with nonlinear and high complexity; a new &#x201C;decomposition and ensemble&#x201D; method, along with combined models, is consequently proposed. It can be inferred that scholars are more inclined towards decomposing the initial time series into its smoother mode components primarily first, and, subsequently, the forecast of the individual decomposed mode components is conducted, followed by a comprehensive integration of all components to derive the ultimate forecasted prices [<xref ref-type="bibr" rid="B19-mathematics-12-04034">19</xref>,<xref ref-type="bibr" rid="B20-mathematics-12-04034">20</xref>]. The EMD [<xref ref-type="bibr" rid="B21-mathematics-12-04034">21</xref>], as a typical adaptive time domain signal decomposition approach, can decompose the original signal by step and generate a series of sequences with different characteristics of frequency domain characteristics.</p>
+      <p>The EMD is an adaptive time-domain signal decomposition technique that decomposes the original signal stepwise, resulting in sequences with varying frequency-domain characteristics. Due to the emphasis on the local characteristics of intrinsic mode functions (IMFs), the IMF-based forecasting analysis can more effectively use original data information. The integration of EMD and the predictive model is a combination model of financial series analysis and futures price prediction [<xref ref-type="bibr" rid="B22-mathematics-12-04034">22</xref>,<xref ref-type="bibr" rid="B23-mathematics-12-04034">23</xref>]. Zhu (2018) [<xref ref-type="bibr" rid="B24-mathematics-12-04034">24</xref>] conjoined the EMD with the minimum daily support vector machine and kernel function model to predict carbon prices. Zhang et al. (2008) [<xref ref-type="bibr" rid="B25-mathematics-12-04034">25</xref>] employed EMD and data-integration methods to predict the price of international crude oil. Azevedo et al. (2016) [<xref ref-type="bibr" rid="B26-mathematics-12-04034">26</xref>] utilized the autoregressive moving average (ARMA) model, smooth index model, and dynamic regression combined model to forecast light crude oil prices and Brent crude oil prices in Western Texas. Safari et al. (2018) [<xref ref-type="bibr" rid="B27-mathematics-12-04034">27</xref>] demonstrated that the integrated index smooth model, the ARMA model, and the nonlinear regression neural network outperform individual models (such as the ARMA and LSTM) in forecasting oil prices. Dragomiretskiy and Zosso (2013) [<xref ref-type="bibr" rid="B28-mathematics-12-04034">28</xref>] disseminated the variational mode decomposition (VMD) methodology built upon EMD decomposition, achieving a multiresolution mode decomposition. Compared with studies on single machine learning models, those on the current hybrid model showed a considerable enhancement in predictive accuracy. Nonetheless, investigation into mixed modeling centered on the VMD decomposition technique frequently overlooks residual elements, engendering a decline in the precision of information. This paper employs the EMD technique to conduct a secondary decomposition after the VMD process to address this issue.</p>
+      <p>The artificial neural network (ANN), considered one of the most powerful techniques in the machine learning model [<xref ref-type="bibr" rid="B29-mathematics-12-04034">29</xref>], plays a significant role in future events forecast efficiently [<xref ref-type="bibr" rid="B30-mathematics-12-04034">30</xref>]. In particular, the Transformer model [<xref ref-type="bibr" rid="B31-mathematics-12-04034">31</xref>] is an efficient neural network model based on an attention mechanism, which can capture the interaction information between any pair of time steps. It has been shown to possess powerful modeling capability and finer-grained data processing. Compared with the LSTM model, the Transformer model sacrifices more parameters to utilize long-term information, thereby better capturing the long-term correlation within sequential data. As such, it is commonly employed in forecasting stock prices [<xref ref-type="bibr" rid="B32-mathematics-12-04034">32</xref>,<xref ref-type="bibr" rid="B33-mathematics-12-04034">33</xref>]. Muhammad et al. (2022) [<xref ref-type="bibr" rid="B29-mathematics-12-04034">29</xref>] proposed a Transformer-based model for predicting the daily and monthly stock prices of the Dhaka Stock Exchange (DSE). The model consists of two input layers, three Transformer layers, one pooling layer, two dropout layers, and two dense layers. The model exhibits excellent predictive performance.</p>
+      <p>The main contributions of this study are described as follows. Given the high predictive accuracy of the Transformer model when applied to time series data, this article forecasts the value of the VMFs after the VMD decomposition and the importance of IMFs after the second decomposition of the EMD by utilizing the Transformer model. Based on the WTI and Brent crude oil price series, this study uses a secondary decomposition combined model to predict the price of WTI and Brent crude oil, respectively. Specifically, this paper employs the VMD&#x2013;EMD&#x2013;Transformer model, which first utilized the VMD method to decompose the original WTI and Brent crude oil price series into various subseries. The original series was then subtracted from each subseries to obtain the residual series, which was further decomposed using EMD. The Transformer model was then used to forecast all decomposed components, and the predicted values were linearly combined to form the forecast result of crude oil prices. The empirical study results clearly demonstrate that our proposed VMD&#x2013;EMD&#x2013;Transformer model outperforms the other three models. Details are provided in <xref ref-type="sec" rid="sec3-mathematics-12-04034">Section 3</xref>.</p>
+      <p>The organization of the remainder of this paper is as follows: <xref ref-type="sec" rid="sec2-mathematics-12-04034">Section 2</xref> presents an overview of diverse approaches for the forecast of crude oil prices. <xref ref-type="sec" rid="sec3-mathematics-12-04034">Section 3</xref> comprises the empirical investigation of the article, encompassing the assessment of models for forecasting crude oil futures prices. Ultimately, this paper culminates in exposing the conclusions drawn from our empirical analysis in <xref ref-type="sec" rid="sec4-mathematics-12-04034">Section 4</xref>.</p>
+    </sec>
+    <sec id="sec2-mathematics-12-04034">
+      <title>2. Model Description</title>
+      <sec id="sec2dot1-mathematics-12-04034">
+        <title>2.1. The VMD Model (Variational Mode Decomposition)</title>
+        <p>The VMD method, introduced by [<xref ref-type="bibr" rid="B28-mathematics-12-04034">28</xref>], provides a robust framework for decomposing nonlinear and nonstationary signals into discrete subsignals (modes) with limited bandwidth. This process isolates each mode&#x2019;s frequency domain characteristics iteratively while minimizing the total bandwidth.</p>
+        <p>To describe the VMD process in detail, consider a complex signal composed of multiple oscillatory components. The VMD method separates this signal into distinct modes, each representing a specific frequency range. For instance,</p>
+        <list list-type="bullet">
+          <list-item>
+            <label>-</label>
+            <p>Mode 1 typically captures high-frequency noise or rapid fluctuations.</p>
+          </list-item>
+          <list-item>
+            <label>-</label>
+            <p>Mode 2 focuses on medium-frequency patterns, often associated with cyclic behaviors.</p>
+          </list-item>
+          <list-item>
+            <label>-</label>
+            <p>Mode 3 isolates low-frequency trends, reflecting the underlying long-term behavior of the signal.</p>
+          </list-item>
+        </list>
+        <p>Through this decomposition, VMD enables the separation of meaningful patterns from noise, providing a more precise representation of the signal&#x2019;s structure and improving the subsequent modeling process.</p>
+        <p>Mathematically, the VMD method is formulated as an iterative variational framework that seeks to minimize the total bandwidth of all modes while maintaining the integrity of the original signal. This is achieved by solving the following variational problem:<disp-formula id="FD1-mathematics-12-04034"><label>(1)</label><mml:math id="mm1" display="block"><mml:semantics><mml:mrow><mml:munder><mml:mo movablelimits="true" form="prefix">min</mml:mo><mml:mrow><mml:msub><mml:mi>u</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>w</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:mrow></mml:munder><mml:mfenced separators="" open="{" close="}"><mml:munderover><mml:mo>&#x2211;</mml:mo><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>K</mml:mi></mml:munderover><mml:msubsup><mml:mfenced separators="" open="&#x2225;" close="&#x2225;"><mml:mfenced separators="" open="[" close="]"><mml:msub><mml:mo>&#x2202;</mml:mo><mml:mi>t</mml:mi></mml:msub><mml:mfenced separators="" open="(" close=")"><mml:mi>&#x3B4;</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mi>j</mml:mi><mml:mrow><mml:mi>&#x3C0;</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mfrac></mml:mstyle></mml:mfenced><mml:mo>&#x2297;</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mfenced><mml:msup><mml:mi>e</mml:mi><mml:mrow><mml:mo>&#x2212;</mml:mo><mml:mi>j</mml:mi><mml:msub><mml:mi>w</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mi>t</mml:mi></mml:mrow></mml:msup></mml:mfenced><mml:mn>2</mml:mn><mml:mn>2</mml:mn></mml:msubsup></mml:mfenced><mml:mo>,</mml:mo><mml:mi>s</mml:mi><mml:mo>.</mml:mo><mml:mi>t</mml:mi><mml:mo>.</mml:mo><mml:munderover><mml:mo>&#x2211;</mml:mo><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>K</mml:mi></mml:munderover><mml:msub><mml:mi>u</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mi>f</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        here, <inline-formula><mml:math id="mm2"><mml:semantics><mml:msub><mml:mi>w</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:semantics></mml:math></inline-formula> represents the central frequency of the <italic>k</italic>-th mode, used to identify the dominant frequency components in each mode. <italic>j</italic> denotes the imaginary unit from the Hilbert transform, essential for computing analytic signals, where <italic>t</italic> is the time; <inline-formula><mml:math id="mm3"><mml:semantics><mml:mrow><mml:mo>{</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo>&#x2265;</mml:mo><mml:mn>1</mml:mn><mml:mo>}</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula> and <inline-formula><mml:math id="mm4"><mml:semantics><mml:mrow><mml:mo>{</mml:mo><mml:msub><mml:mi>w</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo>&#x2265;</mml:mo><mml:mn>1</mml:mn><mml:mo>}</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula> are the modal components obtained after decomposition and corresponding central frequency; <italic>K</italic> represents the number of modes of decomposition; <inline-formula><mml:math id="mm5"><mml:semantics><mml:mrow><mml:mi>f</mml:mi><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula> indicates the time series signal of the original input; <inline-formula><mml:math id="mm6"><mml:semantics><mml:msub><mml:mi>u</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:semantics></mml:math></inline-formula> represents the <inline-formula><mml:math id="mm7"><mml:semantics><mml:msup><mml:mi>k</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mi>h</mml:mi></mml:mrow></mml:msup></mml:semantics></mml:math></inline-formula> term in the subseries of <inline-formula><mml:math id="mm8"><mml:semantics><mml:mrow><mml:mi>f</mml:mi><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula>; <inline-formula><mml:math id="mm9"><mml:semantics><mml:mrow><mml:mi>&#x3B4;</mml:mi><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula> is the pulse function; &#x2297; is a convolution operator. We introduce a quadratic penalty function term <inline-formula><mml:math id="mm10"><mml:semantics><mml:mi>&#x3B1;</mml:mi></mml:semantics></mml:math></inline-formula> and a Lagrange multiplier <inline-formula><mml:math id="mm11"><mml:semantics><mml:mi>&#x3BB;</mml:mi></mml:semantics></mml:math></inline-formula> to find the optimal solution of the constrained variational model. Therefore, the variational modal calculation formula of the constraint function is deformed as follows:<disp-formula id="FD2-mathematics-12-04034"><label>(2)</label><mml:math id="mm12" display="block"><mml:semantics><mml:mrow><mml:mi>L</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>w</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:mi>&#x3BB;</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>&#x3B1;</mml:mi><mml:munder><mml:mo>&#x2211;</mml:mo><mml:mi>k</mml:mi></mml:munder><mml:msubsup><mml:mfenced separators="" open="&#x2225;" close="&#x2225;"><mml:mfenced separators="" open="[" close="]"><mml:msub><mml:mo>&#x2202;</mml:mo><mml:mi>t</mml:mi></mml:msub><mml:mfenced separators="" open="(" close=")"><mml:mi>&#x3B4;</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mi>j</mml:mi><mml:mrow><mml:mi>&#x3C0;</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:mfrac></mml:mstyle></mml:mfenced><mml:mo>&#x2297;</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mfenced></mml:mfenced><mml:mn>2</mml:mn><mml:mn>2</mml:mn></mml:msubsup><mml:mo>+</mml:mo><mml:msubsup><mml:mfenced separators="" open="&#x2225;" close="&#x2225;"><mml:mi>f</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:munder><mml:mo>&#x2211;</mml:mo><mml:mi>k</mml:mi></mml:munder><mml:msub><mml:mi>u</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mfenced><mml:mn>2</mml:mn><mml:mn>2</mml:mn></mml:msubsup><mml:mo>+</mml:mo><mml:mrow><mml:mo stretchy="false">&#x2329;</mml:mo><mml:mi>&#x3BB;</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>f</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:munder><mml:mo>&#x2211;</mml:mo><mml:mi>k</mml:mi></mml:munder><mml:msub><mml:mi>u</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo stretchy="false">&#x232A;</mml:mo></mml:mrow><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        where <inline-formula><mml:math id="mm13"><mml:semantics><mml:mi>&#x3BB;</mml:mi></mml:semantics></mml:math></inline-formula> represents the Lagrange multiplier, ensuring that the reconstructed signal from all modes matches the original signal <inline-formula><mml:math id="mm14"><mml:semantics><mml:mrow><mml:mi>f</mml:mi><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula>, enforcing the decomposition constraint. <inline-formula><mml:math id="mm15"><mml:semantics><mml:mi>&#x3B1;</mml:mi></mml:semantics></mml:math></inline-formula> represents the penalty function that controls the bandwidth of each mode. Larger values of <inline-formula><mml:math id="mm16"><mml:semantics><mml:mi>&#x3B1;</mml:mi></mml:semantics></mml:math></inline-formula> lead to tighter bandwidths, resulting in more distinct mode separation. However, overly large values may lead to loss of signal information. Then, we transform the Lagrangian function from the time domain to the frequency domain and calculate the corresponding extreme value. We obtain the optimal solution of the constrained variational model using the alternating direction method of multipliers (ADMM). Subsequently, we transform the Lagrangian function from the time domain to the frequency domain and compute the corresponding extrema. The optimal solution <inline-formula><mml:math id="mm17"><mml:semantics><mml:mrow><mml:mo>{</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>,</mml:mo><mml:msub><mml:mi>w</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>k</mml:mi><mml:mo>&#x2265;</mml:mo><mml:mn>1</mml:mn><mml:mo>}</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula> to the constrained variational model can be obtained via the ADMM algorithm as follows:<disp-formula id="FD3-mathematics-12-04034"><label>(3)</label><mml:math id="mm18" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>u</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mrow><mml:mover accent="true"><mml:mi>f</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mrow><mml:mo>(</mml:mo><mml:mi>w</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mo>&#x2211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>&#x2260;</mml:mo><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:msub><mml:mover accent="true"><mml:mi>u</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>w</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:mfrac><mml:mrow><mml:mover accent="true"><mml:mi>&#x3BB;</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mrow><mml:mo>(</mml:mo><mml:mi>w</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow><mml:mn>2</mml:mn></mml:mfrac></mml:mrow><mml:mrow><mml:mn>1</mml:mn><mml:mo>+</mml:mo><mml:mn>2</mml:mn><mml:mi>&#x3B1;</mml:mi><mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:mi>w</mml:mi><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mi>w</mml:mi><mml:mi>k</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:mfrac></mml:mstyle><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        and
+        <disp-formula id="FD4-mathematics-12-04034"><label>(4)</label><mml:math id="mm19" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mover accent="true"><mml:mi>w</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mi>k</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mrow><mml:msubsup><mml:mo>&#x222B;</mml:mo><mml:mn>0</mml:mn><mml:mo>&#x221E;</mml:mo></mml:msubsup><mml:mi>&#x3C9;</mml:mi><mml:msup><mml:mrow><mml:mo>|</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>u</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mi>k</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>w</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>|</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mi>d</mml:mi><mml:mi>w</mml:mi></mml:mrow><mml:mrow><mml:msubsup><mml:mo>&#x222B;</mml:mo><mml:mn>0</mml:mn><mml:mo>&#x221E;</mml:mo></mml:msubsup><mml:msup><mml:mrow><mml:mo>|</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>u</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mi>k</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>w</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>|</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup><mml:mi>d</mml:mi><mml:mi>w</mml:mi></mml:mrow></mml:mfrac></mml:mstyle><mml:mo>.</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula></p>
+      </sec>
+      <sec id="sec2dot2-mathematics-12-04034">
+        <title>2.2.  EMD</title>
+        <p>Empirical mode decomposition (EMD), introduced by [<xref ref-type="bibr" rid="B34-mathematics-12-04034">34</xref>], is an adaptive time-domain signal decomposition technique designed to decompose a signal into intrinsic mode functions (IMFs) and a residual term. This stepwise method captures localized frequency-domain characteristics of the original time series, making it suitable for nonlinear, nonstationary data. Each IMF must satisfy two prerequisites: (1) the number of extrema and zero crossings in the signal must be equal or differ by at most one, and (2) the mean value of the envelopes formed by local maxima and minima must be zero. If these conditions are not met, the data series undergoes stationary normalization via spline interpolation to compute upper and lower envelopes.</p>
+        <p>The EMD method adaptively decomposes a complex time series signal into a finite set of intrinsic mode functions (IMFs) and a residual term. Unlike traditional decomposition methods, EMD does not rely on predefined basis functions but, instead, extracts patterns directly from the data.</p>
+        <p>The decomposition process involves iterative sifting, where the local maxima and minima of the signal are identified, and the mean envelope is calculated. This process continues until an IMF satisfies the following two conditions:<list list-type="order"><list-item><p>The number of extrema and zero crossings must either be equal or differ by at most one.</p></list-item><list-item><p>The mean value of the envelope formed by local maxima and minima must be zero.</p></list-item></list></p>
+        <p>As an example, applying EMD to a crude oil price signal may yield the following: IMF1 captures high-frequency fluctuations, such as short-term market noise. IMF2 represents medium-frequency components, reflecting intermediate trends or cycles. IMF3 highlights low-frequency behavior corresponding to long-term price trends. The residual term accounts for any remaining nonperiodic behavior.</p>
+        <p>By breaking the signal into these distinct components, EMD facilitates a detailed analysis of different timescale features, enhancing forecasting accuracy and interpretability.</p>
+        <p>The mean envelope line <inline-formula><mml:math id="mm20"><mml:semantics><mml:mrow><mml:msub><mml:mi>m</mml:mi><mml:mi>l</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula> can be derived by computing the average of these envelopes. After that, the new data series <inline-formula><mml:math id="mm21"><mml:semantics><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mi>l</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula> can be acquired by subtracting the original data series <inline-formula><mml:math id="mm22"><mml:semantics><mml:mrow><mml:mi>X</mml:mi><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula> from the mean envelope line <inline-formula><mml:math id="mm23"><mml:semantics><mml:mrow><mml:msub><mml:mi>m</mml:mi><mml:mi>l</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula>:<disp-formula id="FD5-mathematics-12-04034"><label>(5)</label><mml:math id="mm24" display="block"><mml:semantics><mml:mrow><mml:mi>X</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mi>l</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>h</mml:mi><mml:mi>l</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>.</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+		Typically, the signal remains nonstationary. Hence, we repeated the above procedure <italic>k</italic> times and ceased the process upon the convergence of the average envelope to zero to obtain the first component <inline-formula><mml:math id="mm25"><mml:semantics><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mi>l</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula>:<disp-formula id="FD6-mathematics-12-04034"><label>(6)</label><mml:math id="mm26" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mo>(</mml:mo><mml:mi>k</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn><mml:mo>)</mml:mo></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        and
+        <disp-formula id="FD7-mathematics-12-04034"><label>(7)</label><mml:math id="mm27" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mn>1</mml:mn><mml:mi>k</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>.</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+		The first IMF is the component <inline-formula><mml:math id="mm28"><mml:semantics><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula> with the highest frequency. By subtracting the part <inline-formula><mml:math id="mm29"><mml:semantics><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula> from the original data series <inline-formula><mml:math id="mm30"><mml:semantics><mml:mrow><mml:mi>X</mml:mi><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula>, the data series <inline-formula><mml:math id="mm31"><mml:semantics><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula> is obtained with the high frequency removed. After the above processing on <inline-formula><mml:math id="mm32"><mml:semantics><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula>, the second IMF component <inline-formula><mml:math id="mm33"><mml:semantics><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula> can be obtained. This process is repeated until the difference series cannot be further decomposed, and the final difference series represents the trend component of the original data series:<disp-formula id="FD8-mathematics-12-04034"><label>(8)</label><mml:math id="mm34" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>r</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mspace width="4.pt"/><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo><mml:mo>&#x2026;</mml:mo><mml:mo>,</mml:mo><mml:mi>n</mml:mi><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        where <italic>n</italic> is the number of items in the dataset. Therefore, the original data series can be expressed as the sum of these IMFs and trend items:<disp-formula id="FD9-mathematics-12-04034"><label>(9)</label><mml:math id="mm35" display="block"><mml:semantics><mml:mrow><mml:mi>X</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:munderover><mml:mo>&#x2211;</mml:mo><mml:mrow><mml:mi>j</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>n</mml:mi></mml:munderover><mml:msub><mml:mi>C</mml:mi><mml:mi>j</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>+</mml:mo><mml:msub><mml:mi>r</mml:mi><mml:mi>n</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>.</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+		The decomposition steps are summarized below:
+		<list list-type="simple"><list-item><p><bold>Step 1:</bold> Initialization:<disp-formula><mml:math id="mm36" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>X</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula></p></list-item><list-item><p><bold>Step 2:</bold> Extract the <inline-formula><mml:math id="mm37"><mml:semantics><mml:msup><mml:mi>i</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mi>h</mml:mi></mml:mrow></mml:msup></mml:semantics></mml:math></inline-formula> IMF: First, initialize
+ <disp-formula><mml:math id="mm38" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mn>0</mml:mn></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>r</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        to obtain the extremum points of <inline-formula><mml:math id="mm39"><mml:semantics><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula>, perform cubic spline interpolation on the series of <inline-formula><mml:math id="mm40"><mml:semantics><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula>, gain the upper and lower envelopes of <inline-formula><mml:math id="mm41"><mml:semantics><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula>, and then define
+        <disp-formula><mml:math id="mm42" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mi>m</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>.</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+		If <inline-formula><mml:math id="mm43"><mml:semantics><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula> meets the standard of IMF, set
+        <disp-formula><mml:math id="mm44" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>h</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>;</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+		Otherwise, let <inline-formula><mml:math id="mm45"><mml:semantics><mml:mrow><mml:mi>k</mml:mi><mml:mo>=</mml:mo><mml:mi>k</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:semantics></mml:math></inline-formula> jump back to Step 1 to obtain the extremum points of <inline-formula><mml:math id="mm46"><mml:semantics><mml:mrow><mml:msub><mml:mi>h</mml:mi><mml:mrow><mml:mi>k</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula>.</p></list-item><list-item><p><bold>Step 3:</bold> Define
+		<disp-formula><mml:math id="mm47" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:msub><mml:mi>r</mml:mi><mml:mrow><mml:mi>i</mml:mi><mml:mo>&#x2212;</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mi>C</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        and if the number of extremum points of <inline-formula><mml:math id="mm48"><mml:semantics><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula> is less than 2, then the decomposition ends, and the obtained <inline-formula><mml:math id="mm49"><mml:semantics><mml:mrow><mml:msub><mml:mi>r</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mrow></mml:semantics></mml:math></inline-formula> is the trend of the series <inline-formula><mml:math id="mm50"><mml:semantics><mml:mrow><mml:mi>X</mml:mi><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:semantics></mml:math></inline-formula>; otherwise, set <inline-formula><mml:math id="mm51"><mml:semantics><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mi>i</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn></mml:mrow></mml:semantics></mml:math></inline-formula>, and jump back to <bold>Step 2</bold>.</p></list-item></list></p>
+      </sec>
+      <sec id="sec2dot3-mathematics-12-04034">
+        <title>2.3. Transformer Model</title>
+        <p>The Transformer model is a well-known, recently developed machine learning technique with robust parallel processing capabilities and superior performance compared to conventional neural network models for fitting and forecasting real-world problems. The Transformer model consists of an attention mechanism and uses position coding, a self-attention mechanism, and a feedforward neural network to self-identify, self-adjust, and calculate the whole connection layer. First of all, in the absence of a temporal relationship of the input sample series, we need to use sine and cosine functions for positional encoding of the input, where each positional code only corresponds to a sine signal or cosine signal:<disp-formula id="FD10-mathematics-12-04034"><label>(10)</label><mml:math id="mm52" display="block"><mml:semantics><mml:mrow><mml:mi>P</mml:mi><mml:mi>E</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>P</mml:mi><mml:mrow><mml:mi>o</mml:mi><mml:mi>s</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mn>2</mml:mn><mml:mi>i</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mo form="prefix">sin</mml:mo><mml:mfenced separators="" open="(" close=")"><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:msub><mml:mi>P</mml:mi><mml:mrow><mml:mi>o</mml:mi><mml:mi>s</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:msup><mml:mn>10,000</mml:mn><mml:mfrac><mml:mrow><mml:mn>2</mml:mn><mml:mi>i</mml:mi></mml:mrow><mml:mi>d</mml:mi></mml:mfrac></mml:msup></mml:mrow></mml:mfrac></mml:mstyle></mml:mfenced><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        and
+        <disp-formula id="FD11-mathematics-12-04034"><label>(11)</label><mml:math id="mm53" display="block"><mml:semantics><mml:mrow><mml:mi>P</mml:mi><mml:mi>E</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>P</mml:mi><mml:mrow><mml:mi>o</mml:mi><mml:mi>s</mml:mi></mml:mrow></mml:msub><mml:mo>,</mml:mo><mml:mn>2</mml:mn><mml:mi>i</mml:mi><mml:mo>+</mml:mo><mml:mn>1</mml:mn><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mo form="prefix">cos</mml:mo><mml:mfenced separators="" open="(" close=")"><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:msub><mml:mi>P</mml:mi><mml:mrow><mml:mi>o</mml:mi><mml:mi>s</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:msup><mml:mn>10,000</mml:mn><mml:mfrac><mml:mrow><mml:mn>2</mml:mn><mml:mi>i</mml:mi></mml:mrow><mml:mi>d</mml:mi></mml:mfrac></mml:msup></mml:mrow></mml:mfrac></mml:mstyle></mml:mfenced><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        where <inline-formula><mml:math id="mm54"><mml:semantics><mml:msub><mml:mi>P</mml:mi><mml:mrow><mml:mi>o</mml:mi><mml:mi>s</mml:mi></mml:mrow></mml:msub></mml:semantics></mml:math></inline-formula> is the position of elements in the sample for predicting crude oil price series; <italic>i</italic> is the dimension of elements in the sample for predicting crude oil price series; <italic>d</italic> is the dimension of the position vector in the model. Subsequently, the crude oil price series is input into the matrix and mapped to three different vector matrices, including the query matrix <italic>Q</italic>, the key matrix <italic>K</italic>, and the value matrix <italic>V</italic> through three different linear transformations, as shown in Formula (12). The output of the multihead attention mechanism is obtained by linear transformation and the application of the Softmax function, as depicted in Formula (13).
+        <disp-formula id="FD12-mathematics-12-04034"><label>(12)</label><mml:math id="mm55" display="block"><mml:semantics><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mi>Q</mml:mi></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mo>=</mml:mo><mml:mi>X</mml:mi><mml:msup><mml:mi>W</mml:mi><mml:mi>Q</mml:mi></mml:msup><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="right"><mml:mi>K</mml:mi></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mo>=</mml:mo><mml:mi>X</mml:mi><mml:msup><mml:mi>W</mml:mi><mml:mi>K</mml:mi></mml:msup><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="right"><mml:mi>V</mml:mi></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mo>=</mml:mo><mml:mi>X</mml:mi><mml:msup><mml:mi>W</mml:mi><mml:mi>V</mml:mi></mml:msup><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:semantics></mml:math></disp-formula>
+        where <italic>X</italic> is the sample input matrix, and <inline-formula><mml:math id="mm56"><mml:semantics><mml:msup><mml:mi>W</mml:mi><mml:mi>Q</mml:mi></mml:msup></mml:semantics></mml:math></inline-formula>, <inline-formula><mml:math id="mm57"><mml:semantics><mml:msup><mml:mi>W</mml:mi><mml:mi>K</mml:mi></mml:msup></mml:semantics></mml:math></inline-formula>, and <inline-formula><mml:math id="mm58"><mml:semantics><mml:msup><mml:mi>W</mml:mi><mml:mi>V</mml:mi></mml:msup></mml:semantics></mml:math></inline-formula> are the corresponding linear transformation weight matrices, respectively.
+        <disp-formula id="FD13-mathematics-12-04034"><label>(13)</label><mml:math id="mm59" display="block"><mml:semantics><mml:mrow><mml:mi>A</mml:mi><mml:mi>t</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>Q</mml:mi><mml:mo>,</mml:mo><mml:mi>K</mml:mi><mml:mo>,</mml:mo><mml:mi>V</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>S</mml:mi><mml:mi>o</mml:mi><mml:mi>f</mml:mi><mml:mi>t</mml:mi><mml:mi>m</mml:mi><mml:mi>a</mml:mi><mml:mi>x</mml:mi><mml:mfenced separators="" open="(" close=")"><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mrow><mml:mi>Q</mml:mi><mml:msup><mml:mi>K</mml:mi><mml:mi>T</mml:mi></mml:msup></mml:mrow><mml:msqrt><mml:msub><mml:mi>d</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:msqrt></mml:mfrac></mml:mstyle></mml:mfenced><mml:mi>V</mml:mi><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        where <inline-formula><mml:math id="mm60"><mml:semantics><mml:msub><mml:mi>d</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:semantics></mml:math></inline-formula> is the gradient factor.
+        <disp-formula id="FD14-mathematics-12-04034"><label>(14)</label><mml:math id="mm61" display="block"><mml:semantics><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>h</mml:mi><mml:mi>e</mml:mi><mml:mi>a</mml:mi><mml:msub><mml:mi>d</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mo>=</mml:mo><mml:mi>A</mml:mi><mml:mi>t</mml:mi><mml:mi>t</mml:mi><mml:mi>e</mml:mi><mml:mi>n</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mo>(</mml:mo><mml:mi>Q</mml:mi><mml:msubsup><mml:mi>W</mml:mi><mml:mi>i</mml:mi><mml:mi>Q</mml:mi></mml:msubsup><mml:mo>,</mml:mo><mml:mi>K</mml:mi><mml:msubsup><mml:mi>W</mml:mi><mml:mi>i</mml:mi><mml:mi>K</mml:mi></mml:msubsup><mml:mo>,</mml:mo><mml:mi>V</mml:mi><mml:msubsup><mml:mi>W</mml:mi><mml:mi>i</mml:mi><mml:mi>V</mml:mi></mml:msubsup><mml:mo>)</mml:mo><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>M</mml:mi><mml:mi>u</mml:mi><mml:mi>l</mml:mi><mml:mi>t</mml:mi><mml:mi>i</mml:mi><mml:mi>H</mml:mi><mml:mi>e</mml:mi><mml:mi>a</mml:mi><mml:mi>d</mml:mi><mml:mo>(</mml:mo><mml:mi>Q</mml:mi><mml:mo>,</mml:mo><mml:mi>K</mml:mi><mml:mo>,</mml:mo><mml:mi>V</mml:mi><mml:mo>)</mml:mo></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mo>=</mml:mo><mml:mi>C</mml:mi><mml:mi>o</mml:mi><mml:mi>n</mml:mi><mml:mi>c</mml:mi><mml:mi>a</mml:mi><mml:mi>t</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>h</mml:mi><mml:mi>e</mml:mi><mml:mi>a</mml:mi><mml:msub><mml:mi>d</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mi>h</mml:mi><mml:mi>e</mml:mi><mml:mi>a</mml:mi><mml:msub><mml:mi>d</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo><mml:mi>K</mml:mi><mml:mo>,</mml:mo><mml:mi>h</mml:mi><mml:mi>e</mml:mi><mml:mi>a</mml:mi><mml:msub><mml:mi>d</mml:mi><mml:mi>h</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:msup><mml:mi>w</mml:mi><mml:mn>0</mml:mn></mml:msup><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:semantics></mml:math></disp-formula>
+        where <inline-formula><mml:math id="mm62"><mml:semantics><mml:mrow><mml:msubsup><mml:mi>W</mml:mi><mml:mi>i</mml:mi><mml:mi>Q</mml:mi></mml:msubsup><mml:mo>,</mml:mo><mml:mspace width="4.pt"/><mml:msubsup><mml:mi>W</mml:mi><mml:mi>i</mml:mi><mml:mi>K</mml:mi></mml:msubsup></mml:mrow></mml:semantics></mml:math></inline-formula>, and <inline-formula><mml:math id="mm63"><mml:semantics><mml:msubsup><mml:mi>W</mml:mi><mml:mi>i</mml:mi><mml:mi>V</mml:mi></mml:msubsup></mml:semantics></mml:math></inline-formula> are the linear transformation weight matrices of the <inline-formula><mml:math id="mm64"><mml:semantics><mml:msup><mml:mi>i</mml:mi><mml:mrow><mml:mi>t</mml:mi><mml:mi>h</mml:mi></mml:mrow></mml:msup></mml:semantics></mml:math></inline-formula>-head of <inline-formula><mml:math id="mm65"><mml:semantics><mml:mrow><mml:mi>Q</mml:mi><mml:mo>,</mml:mo><mml:mspace width="4.pt"/><mml:mi>K</mml:mi></mml:mrow></mml:semantics></mml:math></inline-formula>, and <italic>V</italic>, respectively; <inline-formula><mml:math id="mm66"><mml:semantics><mml:msup><mml:mi>w</mml:mi><mml:mn>0</mml:mn></mml:msup></mml:semantics></mml:math></inline-formula> is the linear transformation weight matrix after the multihead attention matrix is spliced; Concat is used to splice multiple results of multiple attention. Subsequently, the crude oil price forecasting samples, processed by multihead attention mechanisms, are fed into a fully connected feedforward neural network layer for computation, which is output as follows:<disp-formula id="FD15-mathematics-12-04034"><label>(15)</label><mml:math id="mm67" display="block"><mml:semantics><mml:mrow><mml:msub><mml:mi>F</mml:mi><mml:mrow><mml:mi>F</mml:mi><mml:mi>N</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>Z</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mo movablelimits="true" form="prefix">max</mml:mo><mml:mrow><mml:mo>(</mml:mo><mml:mn>0</mml:mn><mml:mo>,</mml:mo><mml:mi>Z</mml:mi><mml:msub><mml:mi>W</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:msub><mml:mi>w</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>+</mml:mo><mml:msub><mml:mi>b</mml:mi><mml:mn>2</mml:mn></mml:msub><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        where <inline-formula><mml:math id="mm68"><mml:semantics><mml:msub><mml:mi>b</mml:mi><mml:mn>1</mml:mn></mml:msub></mml:semantics></mml:math></inline-formula> and <inline-formula><mml:math id="mm69"><mml:semantics><mml:msub><mml:mi>b</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:semantics></mml:math></inline-formula> represent offsets; ultimately, the two sublayers of multihead attention and feedforward neural network are coded and normalized by residual connection, and then we can obtain the predicted value of crude oil price as follows:<disp-formula id="FD16-mathematics-12-04034"><label>(16)</label><mml:math id="mm70" display="block"><mml:semantics><mml:mtable displaystyle="true"><mml:mtr><mml:mtd columnalign="right"><mml:msub><mml:mi>S</mml:mi><mml:mrow><mml:mi>o</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mo>=</mml:mo><mml:mi>L</mml:mi><mml:mi>N</mml:mi><mml:mo>(</mml:mo><mml:mi>x</mml:mi><mml:mo>+</mml:mo><mml:msub><mml:mi>S</mml:mi><mml:mrow><mml:mi>o</mml:mi><mml:mi>u</mml:mi><mml:mi>t</mml:mi></mml:mrow></mml:msub><mml:mrow><mml:mo>(</mml:mo><mml:mi>x</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>)</mml:mo><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr><mml:mtr><mml:mtd columnalign="right"><mml:mrow><mml:mi>L</mml:mi><mml:mi>N</mml:mi><mml:mo>(</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow></mml:mtd><mml:mtd columnalign="left"><mml:mrow><mml:mo>=</mml:mo><mml:mi>&#x3B1;</mml:mi><mml:mo>&#xD7;</mml:mo><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mi>u</mml:mi><mml:mi>L</mml:mi></mml:msub></mml:mrow><mml:msqrt><mml:mrow><mml:msubsup><mml:mi>&#x3B1;</mml:mi><mml:mi>L</mml:mi><mml:mn>2</mml:mn></mml:msubsup><mml:mo>+</mml:mo><mml:mi>&#x3B5;</mml:mi></mml:mrow></mml:msqrt></mml:mfrac></mml:mstyle><mml:mo>+</mml:mo><mml:mi>&#x3B2;</mml:mi><mml:mo>,</mml:mo></mml:mrow></mml:mtd></mml:mtr></mml:mtable></mml:semantics></mml:math></disp-formula>
+        where <inline-formula><mml:math id="mm71"><mml:semantics><mml:mrow><mml:mi>L</mml:mi><mml:mi>N</mml:mi></mml:mrow></mml:semantics></mml:math></inline-formula> is layer normalization; <inline-formula><mml:math id="mm72"><mml:semantics><mml:msub><mml:mi>u</mml:mi><mml:mi>L</mml:mi></mml:msub></mml:semantics></mml:math></inline-formula> and <inline-formula><mml:math id="mm73"><mml:semantics><mml:msubsup><mml:mi>&#x3B1;</mml:mi><mml:mi>L</mml:mi><mml:mn>2</mml:mn></mml:msubsup></mml:semantics></mml:math></inline-formula> are the mean and variance, respectively; <inline-formula><mml:math id="mm74"><mml:semantics><mml:mi>&#x3B1;</mml:mi></mml:semantics></mml:math></inline-formula> and <inline-formula><mml:math id="mm75"><mml:semantics><mml:mi>&#x3B2;</mml:mi></mml:semantics></mml:math></inline-formula> represent gain and bias, respectively; <inline-formula><mml:math id="mm76"><mml:semantics><mml:mi>&#x3B5;</mml:mi></mml:semantics></mml:math></inline-formula> is the adjustment parameter. Further details can be found in [<xref ref-type="bibr" rid="B35-mathematics-12-04034">35</xref>].</p>
+        <p>The attention mechanism is a core component of the Transformer model, enabling it to capture relevant patterns in time series data like crude oil prices. Specifically, the self-attention mechanism computes a weighted representation of the input sequence by evaluating the relationships between each time step. This process allows the model to identify and focus on the most influential time points, even when they are far apart in the sequence.</p>
+        <p>In the context of crude oil price forecasting, the attention mechanism operates as follows: 1. Temporal dependencies: The mechanism assigns higher weights to significant historical time points, such as previous price spikes or dips, that are most relevant for predicting the current price. For example, during periods of high volatility, the model focuses on recent rapid changes to forecast short-term fluctuations. 2. Trend recognition: The attention mechanism can recognize gradual trends, such as seasonal patterns or persistent upward/downward price movements, by examining long-term dependencies. 3. Noise reduction: The weighted representation helps the model filter out less relevant data, effectively reducing the influence of noise and improving prediction accuracy.</p>
+        <p>Mathematically, the attention mechanism computes a set of attention scores using the query (<italic>Q</italic>), key (<italic>K</italic>), and value (<italic>V</italic>) matrices derived from the input sequence. The attention scores are calculated as follows:<disp-formula><mml:math id="mm77" display="block"><mml:semantics><mml:mrow><mml:mi>Attention</mml:mi><mml:mrow><mml:mo>(</mml:mo><mml:mi>Q</mml:mi><mml:mo>,</mml:mo><mml:mi>K</mml:mi><mml:mo>,</mml:mo><mml:mi>V</mml:mi><mml:mo>)</mml:mo></mml:mrow><mml:mo>=</mml:mo><mml:mi>softmax</mml:mi><mml:mfenced separators="" open="(" close=")"><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mrow><mml:mi>Q</mml:mi><mml:msup><mml:mi>K</mml:mi><mml:mi>T</mml:mi></mml:msup></mml:mrow><mml:msqrt><mml:msub><mml:mi>d</mml:mi><mml:mi>k</mml:mi></mml:msub></mml:msqrt></mml:mfrac></mml:mstyle></mml:mfenced><mml:mi>V</mml:mi><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        where
+        <list list-type="simple"><list-item><p><italic>Q</italic>: represents the current time step&#x2019;s query vector,</p></list-item><list-item><p><italic>K</italic>: encodes all other time steps as keys,</p></list-item><list-item><p><italic>V</italic>: contains the values corresponding to each key, and</p></list-item><list-item><p>softmax: ensures the scores form a probability distribution, highlighting the most relevant time steps.</p></list-item></list></p>
+        <p>Through this process, the Transformer dynamically captures both short-term and long-term dependencies in crude oil price data, adapting its focus based on the data&#x2019;s volatility and structure. This capability makes it particularly effective for handling crude oil price series&#x2019; nonlinear and nonstationary characteristics&#x201D;.</p>
+      </sec>
+      <sec id="sec2dot4-mathematics-12-04034">
+        <title>2.4. VMD&#x2013;EMD&#x2013;Transformer Model</title>
+        <p>This subsection presents the combined model prediction construction method based on the VMD decomposition and the associated implementation steps. We employ a multistep approach integrating the VMD and EMD decompositions with a Transformer model to forecast the WIT and Brent crude oil prices. As shown in <xref ref-type="fig" rid="mathematics-12-04034-f001">Figure 1</xref>, the proposed Transformer method based on VMD consists of the following four steps:
+		<list list-type="simple"><list-item><p><bold>Step 1</bold>: The VMD decomposition method is utilized to decompose the crude oil price series into mode components (VMFi), followed by the derivation of the residual series through the subtraction of VMFi from the original price series.</p></list-item><list-item><p><bold>Step 2</bold>: Given the intricate and nonlinear characteristics of the residual series, while the EMD decomposition method can decompose the series into relatively stable components, we employ EMD to decompose the residual neglected in previous studies to extract an additional set of series (IMFi).</p></list-item><list-item><p><bold>Step 3</bold>: We use the Transformer model to solve the prediction task of VMFi modal components after VMD decomposition and IMFi modal components after EMD decomposition residual.</p></list-item><list-item><p><bold>Step 4</bold>: We integrate the forecast results. The forecast results of the IMFi are incorporated as the residual term predictions. Subsequently, the forecast results of the VMFi are combined with the residual term predictions to generate the ultimate forecasted futures prices. See <xref ref-type="fig" rid="mathematics-12-04034-f001">Figure 1</xref> for the specific process.</p></list-item></list></p>
+      </sec>
+      <sec id="sec2dot5-mathematics-12-04034">
+        <title>2.5. Assessment Criteria for Forecasting Performance</title>
+        <p>Referring to the existing literature [<xref ref-type="bibr" rid="B8-mathematics-12-04034">8</xref>,<xref ref-type="bibr" rid="B36-mathematics-12-04034">36</xref>,<xref ref-type="bibr" rid="B37-mathematics-12-04034">37</xref>], this paper uses three indicators to assess the forecasting performance of the model: the mean absolute error (MAE), the root mean square error (RMSE), and the mean absolute percentage error (MAPE), which are commonly employed to ascertain the accuracy of the prediction model. Specifically, the lower the MAE, RMSE, and MAPE values, the higher the prediction accuracy. The MAE is defined as follows:<disp-formula id="FD17-mathematics-12-04034"><label>(17)</label><mml:math id="mm78" display="block"><mml:semantics><mml:mrow><mml:mi>M</mml:mi><mml:mi>A</mml:mi><mml:mi>E</mml:mi><mml:mo>=</mml:mo><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mn>1</mml:mn><mml:mi>N</mml:mi></mml:mfrac></mml:mstyle><mml:munderover><mml:mo>&#x2211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover><mml:mrow><mml:mo>|</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mi>i</mml:mi></mml:msub><mml:mo>|</mml:mo></mml:mrow><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        where <italic>N</italic>, <inline-formula><mml:math id="mm79"><mml:semantics><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub></mml:semantics></mml:math></inline-formula>, and <inline-formula><mml:math id="mm80"><mml:semantics><mml:msub><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mi>i</mml:mi></mml:msub></mml:semantics></mml:math></inline-formula> are the number of test sets, the actual, and the predicted values, respectively. The root mean square error (RMSE) shares the same unit with the predicted variable, which makes the error results more intuitive and easily interpretable. Moreover, RMSE is highly sensitive to the instances where predicted values deviate significantly from actual values, making it a widely adopted metric in prediction assessment. Compared with RMSE, MAPE is unaffected by dimensions, which is beneficial to the direct comparison between different models and is an important index to measure the prediction accuracy of models. Using the two indicators at the same time can evaluate the prediction accuracy of the model more comprehensively. The formulas to calculate RMSE and MAPE are as follows:<disp-formula id="FD18-mathematics-12-04034"><label>(18)</label><mml:math id="mm81" display="block"><mml:semantics><mml:mrow><mml:mi>R</mml:mi><mml:mi>M</mml:mi><mml:mi>S</mml:mi><mml:mi>E</mml:mi><mml:mo>=</mml:mo><mml:msqrt><mml:mrow><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mn>1</mml:mn><mml:mi>N</mml:mi></mml:mfrac></mml:mstyle><mml:munderover><mml:mo>&#x2211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover><mml:msup><mml:mrow><mml:mo>(</mml:mo><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mi>i</mml:mi></mml:msub><mml:mo>)</mml:mo></mml:mrow><mml:mn>2</mml:mn></mml:msup></mml:mrow></mml:msqrt><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        and
+        <disp-formula id="FD19-mathematics-12-04034"><label>(19)</label><mml:math id="mm82" display="block"><mml:semantics><mml:mrow><mml:mi>M</mml:mi><mml:mi>A</mml:mi><mml:mi>P</mml:mi><mml:mi>E</mml:mi><mml:mo>=</mml:mo><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mn>1</mml:mn><mml:mi>N</mml:mi></mml:mfrac></mml:mstyle><mml:munderover><mml:mo>&#x2211;</mml:mo><mml:mrow><mml:mi>i</mml:mi><mml:mo>=</mml:mo><mml:mn>1</mml:mn></mml:mrow><mml:mi>N</mml:mi></mml:munderover><mml:mstyle scriptlevel="0" displaystyle="true"><mml:mfrac><mml:mfenced separators="" open="|" close="|"><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mo>&#x2212;</mml:mo><mml:msub><mml:mover accent="true"><mml:mi>x</mml:mi><mml:mo stretchy="false">^</mml:mo></mml:mover><mml:mi>i</mml:mi></mml:msub></mml:mfenced><mml:mrow><mml:mrow><mml:mo>|</mml:mo></mml:mrow><mml:msub><mml:mi>x</mml:mi><mml:mi>i</mml:mi></mml:msub><mml:mrow><mml:mo>|</mml:mo></mml:mrow></mml:mrow></mml:mfrac></mml:mstyle><mml:mo>,</mml:mo></mml:mrow></mml:semantics></mml:math></disp-formula>
+        respectively.</p>
+      </sec>
+    </sec>
+    <sec id="sec3-mathematics-12-04034">
+      <title>3. Empirical Study</title>
+      <sec id="sec3dot1-mathematics-12-04034">
+        <title>3.1. Data</title>
+        <p>In this study, the daily closing prices of West Texas Intermediate (WTI) crude oil futures and the Brent crude oil futures traded in the New York Mercantile Exchange (NYME) are used and the data are obtained from the US Energy Information Administration (EIA). The sample period extends from 4 January 2000 to 30 December 2022. The sample data are divided into the training set and the test set in the ratio of 7:3. That is, the data in the interval from 4 January 2000 to 31 December 2015 are used as the training set, and those in the interval from 4 January 2016 to 30 December 2022 as the test set. The WTI crude oil futures price series contains 5773 sample points, while the Brent crude oil futures price series contains 5769 sample points. The descriptive statistical results of the WTI and Brent crude oil price series are shown in <xref ref-type="table" rid="mathematics-12-04034-t001">Table 1</xref>. This paper utilizes the sequential validation method, as in the field of machine learning, cross-validation is commonly applied for assessing models based on static data. In contrast, sequential validation tends to be employed for time series data.</p>
+        <p>The historical price trend charts of crude oil are shown in <xref ref-type="fig" rid="mathematics-12-04034-f002">Figure 2</xref>. It can be observed that the WTI crude oil prices are highly volatile. Additionally, the WTI crude oil prices had an unprecedented dip into negative values in 2020, and the overall pattern of price fluctuations for WTI crude oil remained indistinct. The Brent crude oil price remained positive but fluctuated violently, demonstrating a lack of discernable change patterns. In addition, the skewness values of WTI and Brent are 0.33 and 0.36, respectively, and the kurtosis values are 0.71 and &#x2212;0.9, respectively. From the statistical values of skewness and kurtosis, it is evident that the distribution of crude oil prices exhibits asymmetry.</p>
+        <p>Furthermore, the observed negative kurtosis value indicates that the distribution of crude oil prices shows a fat-tailed property relative to the standard normal distribution. Additionally, the positive skewness implies a right-biased tendency in the distribution of crude oil prices. Due to the presence of nonstationary and nonlinear characteristics in the crude oil futures price series, it is precise and reasonable to employ the VMD&#x2013;EMD&#x2013;Transformer model to forecast the prices of WTI crude oil and Brent crude oil.</p>
+        <p>The significant volatility observed in both the WTI and Brent crude oil price series in <xref ref-type="fig" rid="mathematics-12-04034-f002">Figure 2</xref> presents a major challenge for accurate forecasting. Traditional econometric models like ARCH and GARCH are widely used for volatility modeling by capturing linear dependencies in variance. However, their effectiveness declines due to nonlinear and high-frequency fluctuations, as seen in these series. The VMD&#x2013;EMD&#x2013;Transformer model addresses this issue through its dual decomposition strategy. First, the VMD method isolates dominant frequency components, filtering out noise while retaining meaningful patterns. Then, the EMD further refines residual components to capture subtle oscillations, making it well suited for nonlinear time series. These decomposed components, when input into the Transformer model, enable robust forecasting that effectively handles both short-term fluctuations and long-term trends.</p>
+      </sec>
+      <sec id="sec3dot2-mathematics-12-04034">
+        <title>3.2. Preprocessing Original Price Data</title>
+        <p>This paper uses VMD decomposition to process the original series according to the determined number of decomposition modes, and the residual series is obtained by subtracting the modal components after VMD decomposition from the original series. According to the mode components VMF0-VMF2 listed in <xref ref-type="table" rid="mathematics-12-04034-t002">Table 2</xref> and the statistical information of the residual, we can find that the Pearson correlation value and Kendall correlation value of the residual series are higher than those of VMF2, which further proves that the residual contains pertinent information regarding the original signal. The EMD is utilized in this paper to prevent information loss and forecast the previously disregarded residual series due to its intricacy. The mode components of the post-EMD residual series are illustrated in <xref ref-type="fig" rid="mathematics-12-04034-f003">Figure 3</xref> and <xref ref-type="fig" rid="mathematics-12-04034-f004">Figure 4</xref>. The decomposition results reveal that after EMD, the residual series is decomposed into three IMF signals (IMF1&#x2013;IMF3). The IMF mode components are arranged from low to high frequency, with IMF1 exhibiting the lowest fluctuation frequency and IMF3 displaying the highest. After the secondary decomposition, the residual mode components show lower nonstationarity and complexity; thus, utilizing these modal components for forecasting crude oil prices can result in higher accuracy.</p>
+      </sec>
+      <sec id="sec3dot3-mathematics-12-04034">
+        <title>3.3. Forecasting Results</title>
+        <p>Our test results verify the superiority of the VMD&#x2013;EMD&#x2013;Transformer model over the other three models&#x2014;LSTM, Transformer, and VMD&#x2013;Transformer models. Specifically, this paper employs the Transformer model to predict the decomposed modal components. It accumulates the predicted values of each modal component through VMD and EMD to obtain the forecast of crude oil prices. <xref ref-type="table" rid="mathematics-12-04034-t003">Table 3</xref> shows that in the prediction of WTI crude oil price, the values of MAE, MSE, and MAPE for the VMD&#x2013;EMD&#x2013;Transformer model are 2.88, 0.092, and 5.602, respectively, while those for the same model in predicting Brent crude oil price are 2.813, 0.088, and 4.946, respectively. In both cases, the VMD&#x2013;EMD&#x2013;Transformer model performs much better than the other three models.</p>
+        <p>To further analyze the model&#x2019;s robustness across different forecasting horizons, we evaluate its performance for both short-term (1 week) and long-term (6 month) predictions. <xref ref-type="table" rid="mathematics-12-04034-t003">Table 3</xref> summarizes the error metrics for these intervals.</p>
+        <p>As shown in <xref ref-type="table" rid="mathematics-12-04034-t003">Table 3</xref>, the model achieves lower errors for short-term predictions due to the relatively stable patterns in shorter horizons. However, the accuracy slightly decreases for long-term forecasts as the volatility in crude oil prices accumulates over extended periods. Despite this, the VMD&#x2013;EMD&#x2013;Transformer model consistently outperforms traditional econometric models (e.g., ARCH and GARCH) and other machine learning models (e.g., LSTM) across both horizons, demonstrating its robustness in diverse forecasting scenarios.</p>
+        <p>To evaluate the effectiveness of the proposed VMD&#x2013;EMD&#x2013;Transformer model, we compare its performance with three commonly used forecasting methods: LSTM, Transformer, and VMD&#x2013;Transformer. The results are listed in <xref ref-type="table" rid="mathematics-12-04034-t004">Table 4</xref>. These methods are briefly introduced below:<list list-type="order"><list-item><p>LSTM (long short-term memory): LSTM is a type of recurrent neural network (RNN) designed to handle sequential data by capturing both short-term and long-term dependencies. It utilizes gated units to control the flow of information, making it effective for time series forecasting tasks. However, LSTM may struggle with capturing complex patterns in nonlinear and nonstationary data, like crude oil prices.</p></list-item><list-item><p>Transformer: The Transformer model is a deep learning architecture based on self-attention mechanisms. Unlike RNNs, it processes the entire input sequence simultaneously, enabling it to capture long-range dependencies efficiently. Transformers are particularly effective in handling large-scale time series data but may require additional preprocessing to manage noise in volatile data.</p></list-item><list-item><p>VMD&#x2013;Transformer: This hybrid approach combines variational mode decomposition (VMD) with a Transformer model. VMD decomposes the original time series into several modes, isolating meaningful frequency components. The Transformer then predicts each mode separately, with the results aggregated to form the final forecast. While this method improves performance by addressing data complexity, it does not account for residual patterns in the decomposed signal.</p></list-item></list></p>
+        <p>By comparing these methods, we aim to highlight the advantages of the VMD&#x2013;EMD&#x2013;Transformer model in capturing both modal components and residual patterns, thereby enhancing forecasting accuracy for crude oil price data.</p>
+        <p><xref ref-type="fig" rid="mathematics-12-04034-f005">Figure 5</xref> and <xref ref-type="fig" rid="mathematics-12-04034-f006">Figure 6</xref> display curves of the predicted and actual prices for the four models on the test set. The closer the curve of predicted prices by a model to the curve of the actual prices, the better the model; so, from these figures, one can observe that the VMD&#x2013;EMD&#x2013;Transformer model exhibits the highest prediction accuracy among the four models.</p>
+      </sec>
+      <sec id="sec3dot4-mathematics-12-04034">
+        <title>3.4. Comparison with Traditional Econometric Models</title>
+        <p>In practical forecasting applications, parsimony is often preferred, with simpler models like ARIMA and GARCH widely utilized due to their ease of estimation and interpretability. To assess the added value of the VMD&#x2013;EMD&#x2013;Transformer model, we conducted a quantitative comparison with ARIMA and GARCH models using the same dataset for crude oil price forecasting. The results are summarized in <xref ref-type="table" rid="mathematics-12-04034-t005">Table 5</xref>.</p>
+        <p>As shown in <xref ref-type="table" rid="mathematics-12-04034-t005">Table 5</xref>, while ARIMA and GARCH models perform adequately for linear or low-volatility scenarios, their accuracy significantly declines when applied to the nonlinear, high-frequency fluctuations of crude oil prices. In contrast, the VMD&#x2013;EMD&#x2013;Transformer model substantially reduces errors across all metrics, particularly in RMSE, indicating superior handling of complex, nonlinear patterns. This improvement justifies the added complexity of the VMD&#x2013;EMD&#x2013;Transformer model, especially in scenarios where high forecasting accuracy is critical, such as in financial investment or risk management.</p>
+      </sec>
+    </sec>
+    <sec sec-type="conclusions" id="sec4-mathematics-12-04034">
+      <title>4. Conclusions</title>
+      <p>The proposed VMD&#x2013;EMD&#x2013;Transformer model in this paper amalgamates the strengths of VMD, EMD, and Transformer models known for their superior generalization ability, resulting in a significant enhancement in the forecasting accuracy of the model. Given the nonstationary and nonlinear traits of crude oil futures&#x2019; daily closing price series, we utilized the VMD method to decompose the original price sequence into multimode components. Furthermore, we decomposed the residual sequence through the EMD method to generate a more refined line, thus augmenting the forecasting accuracy of the Transformer model. Ultimately, we obtained the ultimate forecasted price series by accumulating the predicted values of each mode component post-decomposition. This paper addressed the problem of information loss in traditional time series models that employ VMD decomposition due to the neglect of residuals. Consequently, this study proposed a combined model that fully captures the advantages of models. An empirical evaluation was conducted on the daily closing prices of crude oil futures to test the proposed forecasting model&#x2019;s effectiveness, demonstrating remarkable forecasting accuracy. The significant volatility in crude oil prices poses challenges for traditional econometric models like ARCH and GARCH, which are limited by their linear assumptions. The proposed VMD&#x2013;EMD&#x2013;Transformer model effectively addresses these challenges by leveraging dual decomposition techniques to capture nonlinear, high-frequency fluctuations and employing a Transformer model to identify temporal dependencies. Quantitative comparisons show that the VMD&#x2013;EMD&#x2013;Transformer significantly outperforms ARCH and GARCH in forecasting accuracy, highlighting its potential for real-world financial applications where precision is critical.</p>
+    </sec>
+  </body>
+  <back>
+    <notes>
+      <title>Author Contributions</title>
+      <p>Conceptualization, L.H.; methodology, X.Y. and Y.L.; software, X.Y. and A.Z.; validation, L.H. and A.Z.; formal analysis, X.Y. and Y.L.; investigation, X.Y. and A.Z.; resources, L.H. and J.Z.; data curation, L.H. and A.Z.; writing&#x2014;original draft preparation, X.Y.; writing&#x2014;review and editing, X.Y. and Y.L.; visualization, L.H. and A.Z.; supervision, Y.L.; project administration, J.Z.; funding acquisition, L.H., Y.L. and J.Z. All authors have read and agreed to the published version of the manuscript.</p>
+    </notes>
+    <notes>
+      <title>Data Availability Statement</title>
+      <p>The data used in this research were obtained from the US Energy Information Administration (EIA) and were downloaded from the following link: <uri>https://www.iea.org/data-and-statistics/data-product/monthly-oil-price-statistics-2</uri> accessed on 5 December 2024.</p>
+    </notes>
+    <notes notes-type="COI-statement">
+      <title>Conflicts of Interest</title>
+      <p>Author Ankang Zou was employed by the company Changsha Digital Cloud Chain Technology Co., Ltd. The remaining authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p>
+    </notes>
+    <ref-list>
+      <title>References</title>
+      <ref id="B1-mathematics-12-04034">
+        <label>1.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>L&#xFC;</surname>
+              <given-names>Y.J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Extreme risk measurement models of the international oil market and backtesting analysis</article-title>
+          <source>Financ. Res.</source>
+          <year>2018</year>
+          <volume>9</volume>
+          <fpage>192</fpage>
+          <lpage>206</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B2-mathematics-12-04034">
+        <label>2.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Sun</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Zhao</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Sun</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>A new secondary decomposition-reconstruction-ensemble approach for crude oil price forecasting</article-title>
+          <source>Resour. Policy</source>
+          <year>2022</year>
+          <volume>77</volume>
+          <fpage>102762</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.resourpol.2022.102762</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B3-mathematics-12-04034">
+        <label>3.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Moya-Mart&#xED;nez</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>Ferrer-Lape&#xF1;a</surname>
+              <given-names>R.</given-names>
+            </name>
+            <name>
+              <surname>Escribano-Sotos</surname>
+              <given-names>F.</given-names>
+            </name>
+          </person-group>
+          <article-title>Oil price risk in the Spanish stock market: An industry perspective</article-title>
+          <source>Econ. Model.</source>
+          <year>2014</year>
+          <volume>37</volume>
+          <fpage>280</fpage>
+          <lpage>290</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.econmod.2013.11.014</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B4-mathematics-12-04034">
+        <label>4.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>El Anshasy</surname>
+              <given-names>A.A.</given-names>
+            </name>
+            <name>
+              <surname>Bradley</surname>
+              <given-names>M.D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Oil prices and the fiscal policy response in oil-exporting countries</article-title>
+          <source>J. Policy Model.</source>
+          <year>2012</year>
+          <volume>34</volume>
+          <fpage>605</fpage>
+          <lpage>620</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.jpolmod.2011.08.021</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B5-mathematics-12-04034">
+        <label>5.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>S&#xE9;vi</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Forecasting the volatility of crude oil futures using intraday data</article-title>
+          <source>Eur. J. Oper. Res.</source>
+          <year>2014</year>
+          <volume>235</volume>
+          <fpage>643</fpage>
+          <lpage>659</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.ejor.2014.01.019</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B6-mathematics-12-04034">
+        <label>6.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shi</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>W.</given-names>
+            </name>
+            <name>
+              <surname>Jin</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Stock price forecasting using a hybrid ARMA, BP neural network, and Markov model</article-title>
+          <source>Proceedings of the 2012 IEEE 14th International Conference on Communication Technology</source>
+          <conf-loc>Chengdu, China</conf-loc>
+          <conf-date>9&#x2013;11 November 2012</conf-date>
+          <fpage>981</fpage>
+          <lpage>985</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B7-mathematics-12-04034">
+        <label>7.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Hossain</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Abdus Samad</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Ali</surname>
+              <given-names>Z.</given-names>
+            </name>
+          </person-group>
+          <article-title>ARIMA model and forecasting with three types of pulse prices in Bangladesh: A case study</article-title>
+          <source>Int. J. Soc. Econ.</source>
+          <year>2006</year>
+          <volume>33</volume>
+          <fpage>344</fpage>
+          <lpage>353</lpage>
+          <pub-id pub-id-type="doi">10.1108/03068290610651652</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B8-mathematics-12-04034">
+        <label>8.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ji</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Zou</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>B.</given-names>
+            </name>
+          </person-group>
+          <article-title>Carbon futures price forecasting based on the ARIMA-CNN-LSTM model</article-title>
+          <source>Procedia Comput. Sci.</source>
+          <year>2019</year>
+          <volume>162</volume>
+          <fpage>33</fpage>
+          <lpage>38</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.procs.2019.11.254</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B9-mathematics-12-04034">
+        <label>9.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>Z.</given-names>
+            </name>
+          </person-group>
+          <article-title>Research on Shanghai copper futures price forecast based on X12-ARIMA-GARCH family models</article-title>
+          <source>Proceedings of the 2020 International Conference on Computer Information and Big Data Applications (CIBDA)</source>
+          <conf-loc>Guiyang, China</conf-loc>
+          <conf-date>17&#x2013;19 April 2020</conf-date>
+          <fpage>304</fpage>
+          <lpage>308</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B10-mathematics-12-04034">
+        <label>10.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lin</surname>
+              <given-names>K.P.</given-names>
+            </name>
+            <name>
+              <surname>Pai</surname>
+              <given-names>P.F.</given-names>
+            </name>
+            <name>
+              <surname>Yang</surname>
+              <given-names>S.L.</given-names>
+            </name>
+          </person-group>
+          <article-title>Forecasting concentrations of air pollutants by logarithm support vector regression with immune algorithms</article-title>
+          <source>Appl. Math. Comput.</source>
+          <year>2011</year>
+          <volume>217</volume>
+          <fpage>5318</fpage>
+          <lpage>5327</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.amc.2010.11.055</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B11-mathematics-12-04034">
+        <label>11.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Ghoddusi</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Creamer</surname>
+              <given-names>G.G.</given-names>
+            </name>
+            <name>
+              <surname>Rafizadeh</surname>
+              <given-names>N.</given-names>
+            </name>
+          </person-group>
+          <article-title>Machine learning in energy economics and finance: A review</article-title>
+          <source>Energy Econ.</source>
+          <year>2019</year>
+          <volume>81</volume>
+          <fpage>709</fpage>
+          <lpage>727</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.eneco.2019.05.006</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B12-mathematics-12-04034">
+        <label>12.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>G.B.</given-names>
+            </name>
+            <name>
+              <surname>Zhu</surname>
+              <given-names>Q.Y.</given-names>
+            </name>
+            <name>
+              <surname>Siew</surname>
+              <given-names>C.K.</given-names>
+            </name>
+          </person-group>
+          <article-title>Extreme learning machine: Theory and applications</article-title>
+          <source>Neurocomputing</source>
+          <year>2006</year>
+          <volume>70</volume>
+          <fpage>489</fpage>
+          <lpage>501</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.neucom.2005.12.126</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B13-mathematics-12-04034">
+        <label>13.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Shin</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Hou</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Park</surname>
+              <given-names>C.K.</given-names>
+            </name>
+            <name>
+              <surname>Choi</surname>
+              <given-names>S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Prediction of movement direction in crude oil prices based on semi-supervised learning</article-title>
+          <source>Decis. Support Syst.</source>
+          <year>2013</year>
+          <volume>55</volume>
+          <fpage>348</fpage>
+          <lpage>358</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.dss.2012.11.009</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B14-mathematics-12-04034">
+        <label>14.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Xu</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>LSSVR ensemble learning with uncertain parameters for crude oil price forecasting</article-title>
+          <source>Appl. Soft Comput.</source>
+          <year>2017</year>
+          <volume>56</volume>
+          <fpage>692</fpage>
+          <lpage>701</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.asoc.2016.09.023</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B15-mathematics-12-04034">
+        <label>15.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Chen</surname>
+              <given-names>H.H.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Chiu</surname>
+              <given-names>C.C.</given-names>
+            </name>
+          </person-group>
+          <article-title>Integrating artificial neural networks and text mining to forecast gold futures prices</article-title>
+          <source>Commun. Stat. Simul. Comput.</source>
+          <year>2016</year>
+          <volume>45</volume>
+          <fpage>1213</fpage>
+          <lpage>1225</lpage>
+          <pub-id pub-id-type="doi">10.1080/03610918.2013.786780</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B16-mathematics-12-04034">
+        <label>16.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Li</surname>
+              <given-names>X.</given-names>
+            </name>
+          </person-group>
+          <article-title>A combined neural network model for commodity price forecasting with SSA</article-title>
+          <source>Soft Comput.</source>
+          <year>2018</year>
+          <volume>22</volume>
+          <fpage>5323</fpage>
+          <lpage>5333</lpage>
+          <pub-id pub-id-type="doi">10.1007/s00500-018-3023-2</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B17-mathematics-12-04034">
+        <label>17.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Kohzadi</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Boyd</surname>
+              <given-names>M.S.</given-names>
+            </name>
+            <name>
+              <surname>Kermanshahi</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Kaastra</surname>
+              <given-names>I.</given-names>
+            </name>
+          </person-group>
+          <article-title>A comparison of artificial neural network and time series models for forecasting commodity prices</article-title>
+          <source>Neurocomputing</source>
+          <year>1996</year>
+          <volume>10</volume>
+          <fpage>169</fpage>
+          <lpage>181</lpage>
+          <pub-id pub-id-type="doi">10.1016/0925-2312(95)00020-8</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B18-mathematics-12-04034">
+        <label>18.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Wang</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>Y.</given-names>
+            </name>
+            <name>
+              <surname>Guo</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>Gold price prediction method based on improved PSO-BP</article-title>
+          <source>Int. J. u-e-Serv. Sci. Technol.</source>
+          <year>2015</year>
+          <volume>8</volume>
+          <fpage>253</fpage>
+          <lpage>260</lpage>
+          <pub-id pub-id-type="doi">10.14257/ijunesst.2015.8.11.25</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B19-mathematics-12-04034">
+        <label>19.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Lai</surname>
+              <given-names>K.K.</given-names>
+            </name>
+          </person-group>
+          <article-title>We forecast crude oil prices with an EMD-based neural network ensemble learning paradigm</article-title>
+          <source>Energy Econ.</source>
+          <year>2008</year>
+          <volume>30</volume>
+          <fpage>2623</fpage>
+          <lpage>2635</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.eneco.2008.05.003</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B20-mathematics-12-04034">
+        <label>20.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yu</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Tang</surname>
+              <given-names>L.</given-names>
+            </name>
+          </person-group>
+          <article-title>A decomposition&#x2013;ensemble model with data-characteristic-driven reconstruction for crude oil price forecasting</article-title>
+          <source>Appl. Energy</source>
+          <year>2015</year>
+          <volume>156</volume>
+          <fpage>251</fpage>
+          <lpage>267</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.apenergy.2015.07.025</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B21-mathematics-12-04034">
+        <label>21.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Lin</surname>
+              <given-names>C.S.</given-names>
+            </name>
+            <name>
+              <surname>Chiu</surname>
+              <given-names>S.H.</given-names>
+            </name>
+            <name>
+              <surname>Lin</surname>
+              <given-names>T.Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>Empirical mode decomposition&#x2013;based least squares support vector regression for foreign exchange rate forecasting</article-title>
+          <source>Econ. Model.</source>
+          <year>2012</year>
+          <volume>29</volume>
+          <fpage>2583</fpage>
+          <lpage>2590</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.econmod.2012.07.018</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B22-mathematics-12-04034">
+        <label>22.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Liu</surname>
+              <given-names>H.</given-names>
+            </name>
+            <name>
+              <surname>Yin</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Chen</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Duan</surname>
+              <given-names>Z.</given-names>
+            </name>
+          </person-group>
+          <article-title>Data multi-scale decomposition strategies for air pollution forecasting: A comprehensive review</article-title>
+          <source>J. Clean. Prod.</source>
+          <year>2020</year>
+          <volume>277</volume>
+          <fpage>124023</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.jclepro.2020.124023</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B23-mathematics-12-04034">
+        <label>23.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Tian</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Gai</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>New PM2.5 forecasting system based on combined neural network and an improved multi-objective optimization algorithm: Taking the economic belt surrounding the Bohai Sea as an example</article-title>
+          <source>J. Clean. Prod.</source>
+          <year>2022</year>
+          <volume>375</volume>
+          <fpage>134048</fpage>
+          <pub-id pub-id-type="doi">10.1016/j.jclepro.2022.134048</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B24-mathematics-12-04034">
+        <label>24.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhu</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Ye</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>P.</given-names>
+            </name>
+            <name>
+              <surname>He</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Zhang</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Wei</surname>
+              <given-names>Y.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>A novel multiscale nonlinear ensemble learning paradigm for carbon price forecasting</article-title>
+          <source>Energy Econ.</source>
+          <year>2018</year>
+          <volume>70</volume>
+          <fpage>143</fpage>
+          <lpage>157</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.eneco.2017.12.030</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B25-mathematics-12-04034">
+        <label>25.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Zhang</surname>
+              <given-names>X.</given-names>
+            </name>
+            <name>
+              <surname>Lai</surname>
+              <given-names>K.K.</given-names>
+            </name>
+            <name>
+              <surname>Wang</surname>
+              <given-names>S.Y.</given-names>
+            </name>
+          </person-group>
+          <article-title>A new approach for crude oil price analysis based on empirical mode decomposition</article-title>
+          <source>Energy Econ.</source>
+          <year>2008</year>
+          <volume>30</volume>
+          <fpage>905</fpage>
+          <lpage>918</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.eneco.2007.02.012</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B26-mathematics-12-04034">
+        <label>26.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Azevedo</surname>
+              <given-names>V.G.</given-names>
+            </name>
+            <name>
+              <surname>Campos</surname>
+              <given-names>L.M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Combination of forecasts for the price of crude oil on the spot market</article-title>
+          <source>Int. J. Prod. Res.</source>
+          <year>2016</year>
+          <volume>54</volume>
+          <fpage>5219</fpage>
+          <lpage>5235</lpage>
+          <pub-id pub-id-type="doi">10.1080/00207543.2016.1162340</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B27-mathematics-12-04034">
+        <label>27.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Safari</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Davallou</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Oil price forecasting using a hybrid model</article-title>
+          <source>Energy</source>
+          <year>2018</year>
+          <volume>148</volume>
+          <fpage>49</fpage>
+          <lpage>58</lpage>
+          <pub-id pub-id-type="doi">10.1016/j.energy.2018.01.007</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B28-mathematics-12-04034">
+        <label>28.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Dragomiretskiy</surname>
+              <given-names>K.</given-names>
+            </name>
+            <name>
+              <surname>Zosso</surname>
+              <given-names>D.</given-names>
+            </name>
+          </person-group>
+          <article-title>Variational mode decomposition</article-title>
+          <source>IEEE Trans. Signal Process.</source>
+          <year>2013</year>
+          <volume>62</volume>
+          <fpage>531</fpage>
+          <lpage>544</lpage>
+          <pub-id pub-id-type="doi">10.1109/TSP.2013.2288675</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B29-mathematics-12-04034">
+        <label>29.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Muhammad</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Aftab</surname>
+              <given-names>A.B.</given-names>
+            </name>
+            <name>
+              <surname>Ahsan</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Muhu</surname>
+              <given-names>M.M.</given-names>
+            </name>
+            <name>
+              <surname>Ibrahim</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Khan</surname>
+              <given-names>S.I.</given-names>
+            </name>
+            <name>
+              <surname>Alam</surname>
+              <given-names>M.S.</given-names>
+            </name>
+          </person-group>
+          <article-title>Transformer-Based Deep Learning Model for Stock Price Prediction: A Case Study on Bangladesh Stock Market</article-title>
+          <source>arXiv</source>
+          <year>2022</year>
+          <pub-id pub-id-type="arxiv">2208.08300</pub-id>
+          <pub-id pub-id-type="doi">10.1142/S146902682350013X</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B30-mathematics-12-04034">
+        <label>30.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Diligenti</surname>
+              <given-names>M.</given-names>
+            </name>
+            <name>
+              <surname>Roychowdhury</surname>
+              <given-names>S.</given-names>
+            </name>
+            <name>
+              <surname>Gori</surname>
+              <given-names>M.</given-names>
+            </name>
+          </person-group>
+          <article-title>Integrating prior knowledge into deep learning</article-title>
+          <source>Proceedings of the 2017 the 16th IEEE International Conference on Machine Learning and Applications (ICMLA)</source>
+          <conf-loc>Cancun, Mexico</conf-loc>
+          <conf-date>18&#x2013;21 December 2017</conf-date>
+          <fpage>920</fpage>
+          <lpage>923</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B31-mathematics-12-04034">
+        <label>31.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Vaswani</surname>
+              <given-names>A.</given-names>
+            </name>
+            <name>
+              <surname>Shazeer</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Parmar</surname>
+              <given-names>N.</given-names>
+            </name>
+            <name>
+              <surname>Uszkoreit</surname>
+              <given-names>J.</given-names>
+            </name>
+            <name>
+              <surname>Jones</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Gomez</surname>
+              <given-names>A.N.</given-names>
+            </name>
+            <name>
+              <surname>Polosukhin</surname>
+              <given-names>I.</given-names>
+            </name>
+          </person-group>
+          <article-title>Attention is all you need</article-title>
+          <source>Adv. Neural Inf. Process. Syst.</source>
+          <year>2017</year>
+          <volume>30</volume>
+          <fpage>1</fpage>
+          <lpage>15</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B32-mathematics-12-04034">
+        <label>32.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Yang</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Ng</surname>
+              <given-names>T.L.J.</given-names>
+            </name>
+            <name>
+              <surname>Smyth</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Dong</surname>
+              <given-names>R.</given-names>
+            </name>
+          </person-group>
+          <article-title>Html: Hierarchical Transformer-based multi-task learning for volatility prediction</article-title>
+          <source>Proceedings of the Web Conference 2020</source>
+          <conf-loc>Taipei, Taiwan</conf-loc>
+          <conf-date>20&#x2013;24 April 2020</conf-date>
+          <fpage>441</fpage>
+          <lpage>451</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B33-mathematics-12-04034">
+        <label>33.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Li</surname>
+              <given-names>C.</given-names>
+            </name>
+            <name>
+              <surname>Qian</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Stock Price Prediction Using a Frequency Decomposition Based GRU Transformer Neural Network</article-title>
+          <source>Appl. Sci.</source>
+          <year>2022</year>
+          <volume>13</volume>
+          <elocation-id>222</elocation-id>
+          <pub-id pub-id-type="doi">10.3390/app13010222</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B34-mathematics-12-04034">
+        <label>34.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Huang</surname>
+              <given-names>N.E.</given-names>
+            </name>
+            <name>
+              <surname>Shen</surname>
+              <given-names>Z.</given-names>
+            </name>
+            <name>
+              <surname>Long</surname>
+              <given-names>S.R.</given-names>
+            </name>
+            <name>
+              <surname>Wu</surname>
+              <given-names>M.C.</given-names>
+            </name>
+            <name>
+              <surname>Shih</surname>
+              <given-names>H.H.</given-names>
+            </name>
+            <name>
+              <surname>Zheng</surname>
+              <given-names>Q.</given-names>
+            </name>
+            <name>
+              <surname>Liu</surname>
+              <given-names>H.H.</given-names>
+            </name>
+          </person-group>
+          <article-title>The empirical mode decomposition and the Hilbert spectrum for nonlinear and non-stationary time series analysis</article-title>
+          <source>Proc. R. Soc. Lond.</source>
+          <year>1998</year>
+          <volume>454</volume>
+          <fpage>903</fpage>
+          <lpage>995</lpage>
+          <pub-id pub-id-type="doi">10.1098/rspa.1998.0193</pub-id>
+        </element-citation>
+      </ref>
+      <ref id="B35-mathematics-12-04034">
+        <label>35.</label>
+        <element-citation publication-type="confproc">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Jaka&#x161;a</surname>
+              <given-names>T.</given-names>
+            </name>
+            <name>
+              <surname>Andro&#x10D;ec</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Spr&#x10D;i&#x107;</surname>
+              <given-names>P.</given-names>
+            </name>
+          </person-group>
+          <article-title>Electricity price forecasting&#x2014;ARIMA model approach</article-title>
+          <source>Proceedings of the 2011 8th International Conference on the European Energy Market (EEM)</source>
+          <conf-loc>Zagreb, Croatia</conf-loc>
+          <conf-date>25&#x2013;27 May 2011</conf-date>
+          <fpage>222</fpage>
+          <lpage>225</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B36-mathematics-12-04034">
+        <label>36.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Guha</surname>
+              <given-names>B.</given-names>
+            </name>
+            <name>
+              <surname>Bandyopadhyay</surname>
+              <given-names>G.</given-names>
+            </name>
+          </person-group>
+          <article-title>Gold price forecasting using the ARIMA model</article-title>
+          <source>J. Adv. Manag. Sci.</source>
+          <year>2016</year>
+          <volume>4</volume>
+          <fpage>117</fpage>
+          <lpage>121</lpage>
+        </element-citation>
+      </ref>
+      <ref id="B37-mathematics-12-04034">
+        <label>37.</label>
+        <element-citation publication-type="journal">
+          <person-group person-group-type="author">
+            <name>
+              <surname>Mozeti&#x10D;</surname>
+              <given-names>I.</given-names>
+            </name>
+            <name>
+              <surname>Torgo</surname>
+              <given-names>L.</given-names>
+            </name>
+            <name>
+              <surname>Cerqueira</surname>
+              <given-names>V.</given-names>
+            </name>
+            <name>
+              <surname>Smailovi&#x107;</surname>
+              <given-names>J.</given-names>
+            </name>
+          </person-group>
+          <article-title>How to evaluate sentiment classifiers for Twitter time-ordered data?</article-title>
+          <source>PLoS ONE</source>
+          <year>2018</year>
+          <volume>13</volume>
+          <elocation-id>e0194317</elocation-id>
+          <pub-id pub-id-type="doi">10.1371/journal.pone.0194317</pub-id>
+          <pub-id pub-id-type="pmid">29534112</pub-id>
+        </element-citation>
+      </ref>
+    </ref-list>
+    <sec sec-type="display-objects">
+      <title>Figures and Tables</title>
+      <fig id="mathematics-12-04034-f001" position="float">
+        <label>Figure 1</label>
+        <caption>
+          <p>The proposed VMD&#x2013;EMD&#x2013;Transformer prediction approach.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mathematics-12-04034-g001.tif"/>
+      </fig>
+      <fig id="mathematics-12-04034-f002" position="float">
+        <label>Figure 2</label>
+        <caption>
+          <p>Brent and WTI crude oil historical prices.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mathematics-12-04034-g002.tif"/>
+      </fig>
+      <fig id="mathematics-12-04034-f003" position="float">
+        <label>Figure 3</label>
+        <caption>
+          <p>Intrinsic mode functions (IMFs) derived from the Brent crude oil price residue using EMD, highlighting different frequency components.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mathematics-12-04034-g003.tif"/>
+      </fig>
+      <fig id="mathematics-12-04034-f004" position="float">
+        <label>Figure 4</label>
+        <caption>
+          <p>Intrinsic mode functions (IMFs) derived from the WTI crude oil price residue using EMD, illustrating low- and high-frequency trends.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mathematics-12-04034-g004.tif"/>
+      </fig>
+      <fig id="mathematics-12-04034-f005" position="float">
+        <label>Figure 5</label>
+        <caption>
+          <p>Comparison of actual and predicted Brent crude oil prices using the VMD&#x2013;EMD&#x2013;Transformer and baseline models.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mathematics-12-04034-g005.tif"/>
+      </fig>
+      <fig id="mathematics-12-04034-f006" position="float">
+        <label>Figure 6</label>
+        <caption>
+          <p>Comparison of actual and predicted WTI crude oil prices using the VMD&#x2013;EMD&#x2013;Transformer and baseline models.</p>
+        </caption>
+        <graphic xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="mathematics-12-04034-g006.tif"/>
+      </fig>
+      <table-wrap id="mathematics-12-04034-t001" position="float">
+        <object-id pub-id-type="pii">mathematics-12-04034-t001_Table 1</object-id>
+        <label>Table 1</label>
+        <caption>
+          <p>Descriptive statistics for the oil futures prices.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2" align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">Dataset</th>
+              <th colspan="6" align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">Statistic Description</th>
+            </tr>
+            <tr>
+              <th align="left" valign="middle" style="border-bottom:solid thin"> </th>
+              <th align="center" valign="middle" style="border-bottom:solid thin"> </th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">Min.</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">Median</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">Mean</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">Max.</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">Std.</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin">Length</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" valign="middle">WTI</td>
+              <td align="left" valign="middle">Train dataset</td>
+              <td align="center" valign="middle">17.50</td>
+              <td align="center" valign="middle">62.31</td>
+              <td align="center" valign="middle">63.85</td>
+              <td align="center" valign="middle">145.31</td>
+              <td align="center" valign="middle">28.57</td>
+              <td align="center" valign="middle">4018</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle"> </td>
+              <td align="left" valign="middle">Prediction dataset</td>
+              <td align="center" valign="middle">&#x2212;36.98</td>
+              <td align="center" valign="middle">56.47</td>
+              <td align="center" valign="middle">59.77</td>
+              <td align="center" valign="middle">123.64</td>
+              <td align="center" valign="middle">19.27</td>
+              <td align="center" valign="middle">1755</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">Brent</td>
+              <td align="left" valign="middle">Train dataset</td>
+              <td align="center" valign="middle">16.51</td>
+              <td align="center" valign="middle">61.65</td>
+              <td align="center" valign="middle">65.86</td>
+              <td align="center" valign="middle">143.95</td>
+              <td align="center" valign="middle">32.77</td>
+              <td align="center" valign="middle">4061</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="border-bottom:solid thin"> </td>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Prediction dataset</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">9.12</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">62.57</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">63.79</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">133.18</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">20.63</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">1780</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="mathematics-12-04034-t002" position="float">
+        <object-id pub-id-type="pii">mathematics-12-04034-t002_Table 2</object-id>
+        <label>Table 2</label>
+        <caption>
+          <p>Measures of the VMFs and the residue of the WTI and Brent oil prices.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">Observed</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">Pearson Correlation</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">Kendall Correlation</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">Spearman</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4" align="left" valign="middle">
+                <bold>WTI crude oil price VMD decomposition</bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">WTI_VMF0</td>
+              <td align="center" valign="middle">0.918</td>
+              <td align="center" valign="middle">0.781</td>
+              <td align="center" valign="middle">0.931</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">WTI_VMF1</td>
+              <td align="center" valign="middle">0.521</td>
+              <td align="center" valign="middle">0.319</td>
+              <td align="center" valign="middle">0.411</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">WTI_VMF2</td>
+              <td align="center" valign="middle">0.033</td>
+              <td align="center" valign="middle">0.013</td>
+              <td align="center" valign="middle">0.017</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">WTI_Residue</td>
+              <td align="center" valign="middle">0.215</td>
+              <td align="center" valign="middle">0.103</td>
+              <td align="center" valign="middle">0.141</td>
+            </tr>
+            <tr>
+              <td colspan="4" align="left" valign="middle">
+                <bold>Brent crude price VMD decomposition</bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">Brent_VMF0</td>
+              <td align="center" valign="middle">0.925</td>
+              <td align="center" valign="middle">0.801</td>
+              <td align="center" valign="middle">0.948</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">Brent_VMF1</td>
+              <td align="center" valign="middle">0.505</td>
+              <td align="center" valign="middle">0.284</td>
+              <td align="center" valign="middle">0.365</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle">Brent_VMF2</td>
+              <td align="center" valign="middle">0.030</td>
+              <td align="center" valign="middle">0.016</td>
+              <td align="center" valign="middle">0.023</td>
+            </tr>
+            <tr>
+              <td align="center" valign="middle" style="border-bottom:solid thin">Brent_Residue</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">0.217</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">0.115</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">0.159</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="mathematics-12-04034-t003" position="float">
+        <object-id pub-id-type="pii">mathematics-12-04034-t003_Table 3</object-id>
+        <label>Table 3</label>
+        <caption>
+          <p>Performance of VMD&#x2013;EMD&#x2013;Transformer across forecasting horizons.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin">Horizon</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">MAE</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">RMSE</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">MAPE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" valign="middle">Short-term (1 week)</td>
+              <td align="center" valign="middle">2.25</td>
+              <td align="center" valign="middle">0.085</td>
+              <td align="center" valign="middle">5.12%</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="border-bottom:solid thin">Long-term (6 months)</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">3.45</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">0.120</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">7.84%</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="mathematics-12-04034-t004" position="float">
+        <object-id pub-id-type="pii">mathematics-12-04034-t004_Table 4</object-id>
+        <label>Table 4</label>
+        <caption>
+          <p>Performance comparison of four different models, where the numbers with * are the smallest of &#x201C;errors&#x201D; among the forecasting methods.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin">Model</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">MAE</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">MSE</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">MAPE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="4" align="left" valign="middle">
+                <bold>WTI Crude Oil price forecasting</bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">
+                <bold>VMD&#x2013;EMD&#x2013;Transformer</bold>
+              </td>
+              <td align="center" valign="middle">
+                <bold>2.880 *</bold>
+              </td>
+              <td align="center" valign="middle">
+                <bold>0.092 *</bold>
+              </td>
+              <td align="center" valign="middle">
+                <bold>5.602 *</bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">VMD&#x2013;Transformer</td>
+              <td align="center" valign="middle">9.580</td>
+              <td align="center" valign="middle">0.275</td>
+              <td align="center" valign="middle">18.027</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">Transformer</td>
+              <td align="center" valign="middle">10.394</td>
+              <td align="center" valign="middle">0.331</td>
+              <td align="center" valign="middle">21.189</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">LSTM</td>
+              <td align="center" valign="middle">13.161</td>
+              <td align="center" valign="middle">0.423</td>
+              <td align="center" valign="middle">28.501</td>
+            </tr>
+            <tr>
+              <td colspan="4" align="left" valign="middle">
+                <bold>Brent Crude Oil price forecasting</bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">
+                <bold>VMD&#x2013;EMD&#x2013;Transformer</bold>
+              </td>
+              <td align="center" valign="middle">
+                <bold>2.813 *</bold>
+              </td>
+              <td align="center" valign="middle">
+                <bold>0.088 *</bold>
+              </td>
+              <td align="center" valign="middle">
+                <bold>4.946 *</bold>
+              </td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">VMD&#x2013;Transformer</td>
+              <td align="center" valign="middle">3.525</td>
+              <td align="center" valign="middle">0.101</td>
+              <td align="center" valign="middle">6.431</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">Transformer</td>
+              <td align="center" valign="middle">6.815</td>
+              <td align="center" valign="middle">0.183</td>
+              <td align="center" valign="middle">12.030</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="border-bottom:solid thin">LSTM</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">8.197</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">0.264</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">18.063</td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+      <table-wrap id="mathematics-12-04034-t005" position="float">
+        <object-id pub-id-type="pii">mathematics-12-04034-t005_Table 5</object-id>
+        <label>Table 5</label>
+        <caption>
+          <p>Performance comparison of forecasting models, where the numbers with * are the smallest of &#x201C;errors&#x201D; among the forecasting methods.</p>
+        </caption>
+        <table>
+          <thead>
+            <tr>
+              <th align="left" valign="middle" style="border-bottom:solid thin;border-top:solid thin">Model</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">MAE</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">RMSE</th>
+              <th align="center" valign="middle" style="border-bottom:solid thin;border-top:solid thin">MAPE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td align="left" valign="middle">ARIMA</td>
+              <td align="center" valign="middle">8.12</td>
+              <td align="center" valign="middle">2.67</td>
+              <td align="center" valign="middle">18.45%</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle">GARCH</td>
+              <td align="center" valign="middle">7.98</td>
+              <td align="center" valign="middle">2.54</td>
+              <td align="center" valign="middle">17.80%</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="border-bottom:solid thin">VMD&#x2013;EMD&#x2013;Transformer</td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">
+                <bold>2.88 *</bold>
+              </td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">
+                <bold>0.092 *</bold>
+              </td>
+              <td align="center" valign="middle" style="border-bottom:solid thin">
+                <bold>5.60% *</bold>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </table-wrap>
+    </sec>
+    <fn-group>
+      <fn>
+        <p><bold>Disclaimer/Publisher&#x2019;s Note:</bold> The statements, opinions and data contained in all publications are solely those of the individual author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or products referred to in the content.</p>
+      </fn>
+    </fn-group>
+  </back>
+</article>

@@ -1,0 +1,43 @@
+Nguyen Huu Tiep
+
+tiepngh@gmail.com; tiepngh@sejong.ac.kr
+
+Department of Quantum and Nuclear Engineering, Sejong University, Republic of Korea; Institute for Nuclear Science and Technology (INST), Vietnam Atomic Energy Institute (VINATOM);
+DOI
+10.24432/C5BK64
+License
+
+This dataset is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) license. This dataset encompasses lattice-physics parameters—the infinite multiplication factor (k-inf) and the pin power peaking factor (PPPF)—modeled as functions of variations in fuel pin enrichments for the NuScale US600 fuel assembly type C-01 (NFAC-01) [NuScale FSAR]. These critical parameters were computed using the MCNP6 code, a Monte Carlo-based tool for nuclear reactor criticality simulations. Fuel pin enrichments were uniformly sampled within the range of 0.7–5.0 weight percent (w/o) U-235 to generate the dataset. The dataset contains 39 features, each representing the enrichment of a specific fuel rod in a one-eighth symmetry of the NFAC assembly. The outputs of interest are the k-inf and PPPF values associated with these enrichments.
+Dataset Characteristics
+
+Tabular, Multivariate
+Subject Area
+
+Physics and Chemistry
+Associated Tasks
+
+Regression
+Feature Type
+
+Real
+# Instances
+
+24000
+# Features
+
+39
+Dataset Information
+
+Has Missing Values?
+
+No
+Introductory Paper
+A New Hyperparameter Tuning Framework for Regression Tasks in Deep Neural Network: Combined-Sampling Algorithm to Search the Optimized Hyperparameters
+
+By Nguyen Huu Tiep, Hae-Yong Jeong, Kyung-Doo Kim, Nguyen Xuan Mung, Nhu-Ngoc Dao, Hoai-Nam Tran, Van-Khanh Hoang, Nguyen Ngoc Anh, Mai The Vu.. 2024
+
+Published in Institute for Nuclear Science and Technology (INST), Vietnam Atomic Energy Institute (VINATOM), 179 Hoang Quoc Viet, Cau Giay, Hanoi 100000, Vietnam
+Dataset Files
+File	Size
+raw.csv	11.3 MB
+test.csv	173.4 KBThis allows for the sharing and adaptation of the datasets for any purpose, provided that the appropriate credit is given.
