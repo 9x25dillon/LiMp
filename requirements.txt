@@ -1,0 +1,13 @@
+# Entropy Engine Dependencies
+# This project uses only Python standard library modules
+# No external dependencies required
+
+# Core dependencies (all built-in):
+# - random (for random operations)
+# - hashlib (for entropy calculation)
+# - uuid (for token ID generation)
+
+# Optional dependencies for advanced usage:
+# - json (for data serialization)
+# - time (for timing operations)
+# - math (for mathematical operations)

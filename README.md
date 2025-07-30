@@ -257,3 +257,88 @@ python api.py
 
 Kortix Suna is licensed under the Apache License, Version 2.0. See [LICENSE](./LICENSE) for the full license text.
 
+# Entropy Engine
+
+A Python system for processing tokens through a tree of transformation nodes, with entropy-based branching and memory tracking.
+
+## Overview
+
+The Entropy Engine is a framework for creating complex token transformation pipelines where:
+
+- **Tokens** carry values and track their entropy (based on SHA256 hash)
+- **Nodes** apply transformations and can branch dynamically
+- **Entropy limits** control when transformations stop
+- **Memory tracking** logs all transformations for analysis
+
+## Core Components
+
+### Token
+- Holds a value and calculates entropy from its SHA256 hash
+- Maintains a history of all previous values
+- Can be mutated by transformation functions
+
+### EntropyNode
+- Applies a transformation function to tokens
+- Can have child nodes for branching
+- Supports entropy limits to stop processing
+- Dynamic branching based on token state
+- Memory logging of all transformations
+
+### EntropyEngine
+- Orchestrates the processing of tokens through the node tree
+- Tracks entropy changes over time
+- Exports processing graphs and statistics
+
+## Usage
+
+```python
+from entropy_engine import Token, EntropyNode, EntropyEngine
+
+# Define transformation functions
+def reverse_string(value, entropy):
+    return str(value)[::-1]
+
+def add_random_char(value, entropy):
+    import random
+    chars = "abcdefghijklmnopqrstuvwxyz0123456789"
+    return str(value) + random.choice(chars)
+
+# Create nodes
+root = EntropyNode("root", reverse_string)
+root.add_child(EntropyNode("add_char", add_random_char))
+
+# Create engine and process token
+engine = EntropyEngine(root, max_depth=3)
+token = Token("hello")
+engine.run(token)
+
+# Get results
+print(token.summary())
+print(engine.entropy_stats())
+```
+
+## Features
+
+- **Entropy Calculation**: Based on SHA256 hash of token values
+- **Dynamic Branching**: Nodes can create new child nodes based on token state
+- **Entropy Limits**: Stop processing when entropy reaches certain thresholds
+- **Memory Tracking**: Complete logs of all transformations
+- **Flexible Transformations**: Any function that takes (value, entropy) can be used
+
+## Example Output
+
+```
+Initial token: <Token a1b2c3 val=hello entropy=7.23>
+Final token: <Token a1b2c3 val=ollehx7 entropy=6.89>
+Token summary: {'id': 'a1b2c3...', 'value': 'ollehx7', 'entropy': 6.89, 'history_len': 2}
+Entropy stats: {'initial': 7.23, 'final': 6.89, 'delta': -0.34, 'steps': 2}
+```
+
+## Running the Example
+
+```bash
+python example_usage.py
+```
+
+This will demonstrate the system with various transformation functions and show how tokens evolve through the entropy engine.
+
