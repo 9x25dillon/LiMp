@@ -14,12 +14,10 @@ class Token:
         return sum(int(c, 16) for c in hash_val) / len(hash_val)
 
     def mutate(self, transformation):
-        if transformation is None:
-            return  # Skip mutation
         self.history.append(self.value)
-        # transformation function must accept (value, entropy)
-        self.value = transformation(self.value, self.entropy)
-        self.entropy = self._calculate_entropy()
+        if transformation:
+            self.value = transformation(self.value, self.entropy)
+            self.entropy = self._calculate_entropy()
 
     def __repr__(self):
         return f"<Token {self.id[:6]} val={self.value} entropy={self.entropy:.2f}>"
@@ -42,9 +40,7 @@ class EntropyNode:
         self.memory = []  # Logs per-token activity
 
     def process(self, token, depth, max_depth):
-        if depth > max_depth:
-            return
-        if self.entropy_limit is not None and token.entropy >= self.entropy_limit:
+        if depth > max_depth or (self.entropy_limit is not None and token.entropy >= self.entropy_limit):
             return
 
         original_entropy = token.entropy
@@ -52,7 +48,6 @@ class EntropyNode:
 
         token.mutate(self.transform)
 
-        # Log memory snapshot
         self.memory.append({
             "token_id": token.id,
             "input": original_value,
@@ -62,7 +57,6 @@ class EntropyNode:
             "depth": depth
         })
 
-        # Dynamic branching
         if self.dynamic_brancher:
             new_children = self.dynamic_brancher(token)
             for child in new_children:
@@ -72,7 +66,7 @@ class EntropyNode:
             child.process(token, depth + 1, max_depth)
 
     def add_child(self, child_node):
-        if len(self.children) < 10:  # Arbitrary limit
+        if len(self.children) < 10:
             self.children.append(child_node)
 
     def export_memory(self):
@@ -100,9 +94,7 @@ class EntropyEngine:
         return self.root.export_memory()
 
     def entropy_stats(self):
-        entries = [e for tid, e in self.token_log]
-        if len(entries) < 2:
-            return {"error": "Insufficient data"}
+        entries = [e for _, e in self.token_log]
         delta = entries[-1] - entries[0]
         return {
             "initial": entries[0],
