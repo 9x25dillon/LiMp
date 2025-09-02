@@ -100,6 +100,11 @@ class EntropyEngine:
         return self.root.export_memory()
 
     def entropy_stats(self):
+
+        if len(self.token_log) < 2:
+            return {"error": "Insufficient data"}
+        
+        entries = [e for tid, e in self.token_log]
         entries = [e for tid, e in self.token_log]
         if len(entries) < 2:
             return {"error": "Insufficient data"}
